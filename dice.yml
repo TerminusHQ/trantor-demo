@@ -1,0 +1,53 @@
+services:
+  trantor-demo-user:
+    ports:
+      - 8080
+    expose:
+      - 80
+    deployments:
+      replicas: 1
+    resources:
+      cpu: 0.5
+      mem: 2048
+    depends_on:
+      - "meta-store"
+    health_check:
+      http:
+        port: 8080
+        path: "/actuator/health"
+        duration: 600
+  trantor-demo-custom:
+    ports:
+      - 8080
+    expose:
+      - 80
+    deployments:
+      replicas: 1
+    resources:
+      cpu: 0.5
+      mem: 2048
+    depends_on:
+      - "meta-store"
+    health_check:
+      http:
+        port: 8080
+        path: "/actuator/health"
+        duration: 600
+  trantor-demo-item:
+    ports:
+      - 8080
+    expose:
+      - 80
+    deployments:
+      replicas: 1
+    resources:
+      cpu: 0.5
+      mem: 2048
+    depends_on:
+      - "meta-store"
+    health_check:
+      http:
+        port: 8080
+        path: "/actuator/health"
+        duration: 600
+envs: {}

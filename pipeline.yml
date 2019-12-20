@@ -1,0 +1,46 @@
+version: 1.1
+
+stages:
+  - stage:
+      - git-checkout:
+          params:
+            depth: 1
+
+  - stage:
+      - buildpack:
+          alias: bp-demo-user
+          params:
+            context: ${git-checkout}
+            modules:
+              - name: trantor-demo-user
+                path: demo/trantor-demo-user/user-biz
+      - buildpack:
+          alias: bp-demo-custom
+          params:
+            context: ${git-checkout}
+            modules:
+              - name: trantor-demo-custom
+                path: demo/trantor-demo-custom
+      - buildpack:
+          alias: bp-demo-item
+          params:
+            context: ${git-checkout}
+            modules:
+              - name: trantor-demo-item
+                path: demo/trantor-demo-item/module
+
+  - stage:
+      - release:
+          version: 1.0
+          params:
+            dice_yml: ${git-checkout}/dice.yml
+            docker_images: ${maven-pack}/docker_image
+            replacement_images:
+              - ${bp-demo-user}/pack-result
+              - ${bp-demo-custom}/pack-result
+              - ${bp-demo-item}/pack-result
+
+  - stage:
+      - dice:
+          params:
+            release_id_path: ${release}
