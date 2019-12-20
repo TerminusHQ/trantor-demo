@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>trantor-demo-item</artifactId>
+        <groupId>io.terminus.trantor</groupId>
+        <version>0.4.4-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>module-item-impl</artifactId>
+    <name>Demo Item</name>
+    <description>Demo 商品模块</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-module-item-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>framework</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.terminus.common</groupId>
+                    <artifactId>terminus-spring-boot-starter-rocketmq</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <skip>false</skip>
+                    <attach>false</attach>
+                    <mainClass>io.terminus.trantor.demo.item.ModuleItemApplication</mainClass>
+                    <layout>JAR</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

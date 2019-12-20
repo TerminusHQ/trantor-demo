@@ -1,0 +1,25 @@
+{
+  "models": {
+    "user2_User": {
+      "name": "User Model",
+      "fields": {
+        "username": "UserName"
+      },
+      "fieldMeta": {
+        "sex": {
+          "man": "Man"
+        },
+        "locked": {
+          "trueLabel": "EEE",
+          "falseLabel": "FFF"
+        }
+      }
+    }
+  },
+  "enums": {
+    "io.terminus.trantor.demo.user.model.Sex": {
+      "man": "error",
+      "woman": "Woman"
+    }
+  }
+}

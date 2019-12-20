@@ -1,0 +1,70 @@
+{
+  "name": "@terminus/nusi-custom",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "common": "rm -rf public && TS_NODE_PROJECT=\"./tsconfig-for-webpack-config.json\"",
+    "watch": "npm run common -- webpack-dev-server --config webpack.config.ts --mode development",
+    "widget-input": "export widget=input && npm run common -- webpack-dev-server --config webpack.config.widget.ts --mode development",
+    "widget-show": "export widget=show && npm run common -- webpack-dev-server --config webpack.config.widget.ts --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.terminus.io:aforce/nusi-engine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "@terminus/nusi": "2.x",
+    "react": "^16.8.0",
+    "react-router-dom": "^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "@terminus/nusi-compiler": "latest",
+    "@terminus/nusi": "latest",
+    "@terminus/nusi-engine": "latest",
+    "classnames": "^2.2.6",
+    "datx": "^0.16.0",
+    "lodash": "^4.17.11",
+    "mobx": "^5.9.4",
+    "mobx-react": "^6.0.0-rc.4",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "superagent-mocker": "^0.5.2",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "@types/html-webpack-plugin": "^3.2.0",
+    "@types/lodash": "^4.14.122",
+    "@types/react": "^16.8.5",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/superagent": "^4.1.1",
+    "@types/webpack-dev-server": "^3.1.2",
+    "@types/webpack-merge": "^4.1.3",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^1.0.1",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "script-loader": "^0.7.2",
+    "ts-import-plugin": "^1.5.5",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  }
+}

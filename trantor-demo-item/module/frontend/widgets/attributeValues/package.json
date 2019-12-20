@@ -1,0 +1,17 @@
+{
+  "name": "attributeValues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "config": {
+    "port": 8002,
+    "entry": {
+      "attributeValues-show": [
+        "./src/show/index.tsx"
+      ],
+      "attributeValues-input": [
+        "./src/input/index.tsx"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "trigger": {
+      "key": "user2_testTrigger",
+      "source": "BeforeServerAction",
+      "sourceKey": "user2_UserAction::update",
+      "priority": "Medium",
+      "config": "{\"condition\":\"true\"}",
+      "type": "EL"
+    },
+    "executors": [
+      {
+        "key": "user2_testFlowExecutor",
+        "type": "ApprovalFlow",
+        "targetKey": "p_9390b740fd37488a86aa079233cc5b3a"
+      }
+    ]
+  }
+]
