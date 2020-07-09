@@ -1,0 +1,24 @@
+<View title="用户信息">
+    <Table key="table" model="terminus_trantor_demo_User">
+        <Search>
+            <Fields>
+                <Field name="name" label="用户名"/>
+                <Field name="email" label="邮箱"/>
+                <Field name="phone" label="手机"/>
+            </Fields>
+        </Search>
+        <RecordActions label="操作">
+            <Action label="详情" action="terminus_trantor_demo_User_toDetail"/>
+            <Action label="编辑" action="terminus_trantor_demo_User_toEdit"/>
+            <Action label="删除" after="Refresh" confirm="确定要删除?" action="terminus_trantor_demo_User_delete"/>
+        </RecordActions>
+        <Fields>
+            <Field name="name" label="用户名"/>
+            <Field name="email" label="邮箱"/>
+            <Field name="phone" label="手机"/>
+        </Fields>
+        <Actions>
+            <Action label="创建" openViewType="Dialog" action="terminus_trantor_demo_User_toEdit" />
+        </Actions>
+    </Table>
+</View>

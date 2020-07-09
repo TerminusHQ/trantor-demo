@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>demo</artifactId>
+        <groupId>io.terminus.trantor</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>demo-server</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>demo-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>framework</artifactId>
+            <exclusions>
+                <!-- 这里理论上不应该显式 exelude，trantor 需要优化 -->
+                <exclusion>
+                    <groupId>com.zaxxer</groupId>
+                    <artifactId>HikariCP-java6</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 上报信息至指定 metastore, 此时会根据 @Tmodel 创建对应 table -->
+            <plugin>
+                <groupId>io.terminus.trantor</groupId>
+                <artifactId>trantor-metadata-maven-plugin</artifactId>
+                <version>1.0.2-SNAPSHOT</version>
+                <configuration>
+                    <!-- 这里请替换为你自己的包名 & metastore 地址 -->
+                    <modulePackageName>io.terminus.trantor.demo</modulePackageName>
+                    <metaStoreUrl>http://localhost:8080</metaStoreUrl>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

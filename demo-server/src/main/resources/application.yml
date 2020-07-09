@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    include: >
+      trantor
+
+trantor:
+  # 模型元信息定义类
+  mainModule: io.terminus.trantor.demo.DemoModuleDefinition
