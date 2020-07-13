@@ -3,7 +3,6 @@ package io.terminus.trantor.demo.model;
 import io.terminus.trantor.api.annotation.BaseModel;
 import io.terminus.trantor.api.annotation.TModel;
 import io.terminus.trantor.api.annotation.TModelField;
-import io.terminus.trantor.api.annotation.TModelFieldType;
 
 /**
  * @author zhengdong.jzd@alibaba-inc.com

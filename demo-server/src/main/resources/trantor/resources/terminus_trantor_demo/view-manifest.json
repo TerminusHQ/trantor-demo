@@ -1,6 +1,6 @@
 [
   {
-    "key": "User_List",
+    "key": "List",
     "name": "用户列表",
     "type": "List",
     "forModel": "terminus_trantor_demo_User",
@@ -8,7 +8,7 @@
     "isDefault": true
   },
   {
-    "key": "User_Form",
+    "key": "Form",
     "name": "用户表单",
     "type": "Form",
     "forModel": "terminus_trantor_demo_User",
@@ -16,11 +16,18 @@
     "isDefault": true
   },
   {
-    "key": "User_Detail",
+    "key": "Detail",
     "name": "用户详情",
     "type": "Detail",
     "forModel": "terminus_trantor_demo_User",
     "template": "user-detail-view.xml",
     "isDefault": true
+  },
+  {
+    "key": "FilterAdmin",
+    "name": "自定义的过滤 admin 用户后的用户列表视图",
+    "type": "List",
+    "forModel": "terminus_trantor_demo_User",
+    "template": "user-filter-admin-list-view.xml"
   }
 ]
