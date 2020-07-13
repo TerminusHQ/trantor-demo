@@ -24,7 +24,14 @@
             <Action label="过滤 admin" action="terminus_trantor_demo_User_FilterAdmin"
                 :context="{
                 modelKey: 'terminus_trantor_demo_User',
-                record: {name: 'admin'}
+                record: {name: this.searchData.name}
+                }"/>
+
+            <!-- 自定义 server action, 批量修改邮箱，具体见: UserServerAction.java -->
+            <Action label="批量修改邮箱" after="Refresh" action="terminus_trantor_demo_User_UserServerAction::batchUpdateName"
+                    :context="{
+                modelKey: 'terminus_trantor_demo_User',
+                record: {email: 'demo@terminus.io', id: [2, 3]}
                 }"/>
         </Actions>
     </Table>

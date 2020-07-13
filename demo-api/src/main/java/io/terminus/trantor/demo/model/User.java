@@ -3,11 +3,13 @@ package io.terminus.trantor.demo.model;
 import io.terminus.trantor.api.annotation.BaseModel;
 import io.terminus.trantor.api.annotation.TModel;
 import io.terminus.trantor.api.annotation.TModelField;
+import lombok.Data;
 
 /**
  * @author zhengdong.jzd@alibaba-inc.com
  * @date 2020/7/8
  */
+@Data
 @TModel(name = "用户信息")
 public class User extends BaseModel<Long> {
     private static final long serialVersionUID = 1L;
