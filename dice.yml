@@ -1,0 +1,15 @@
+services:
+  demo:
+    ports:
+      - 8888
+    expose:
+      - 8888
+    deployments:
+      replicas: 1
+    resources:
+      cpu: 0.5
+      mem: 1024
+    health_check:
+      exec:
+        cmd: echo 1
+        duration: 120
