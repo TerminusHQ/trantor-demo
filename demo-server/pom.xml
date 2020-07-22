@@ -40,7 +40,7 @@
                 <configuration>
                     <!-- 这里请替换为你自己的包名 & metastore 地址 -->
                     <modulePackageName>io.terminus.trantor.demo</modulePackageName>
-                    <metaStoreURL>http://meta-store.services--d62e16ab1c198134f33cf8a8fda16de6.svc.cluster.local:8080</metaStoreURL>
+                    <metaStoreUrl>http://meta-store.services--d62e16ab1c198134f33cf8a8fda16de6.svc.cluster.local:8080</metaStoreUrl>
                 </configuration>
                 <executions>
                     <execution>
@@ -55,8 +55,19 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <executable>true</executable>
+                    <fork>true</fork>
+                    <skip>false</skip>
+                    <attach>false</attach>
+                    <mainClass>io.terminus.trantor.demo.DemoApplication</mainClass>
+                    <layout>JAR</layout>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
