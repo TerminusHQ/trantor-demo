@@ -13,4 +13,6 @@ services:
       exec:
         cmd: echo 1
         duration: 120
-  
+addons:
+  api-gateway:
+    plan: "api-gateway:basic"
