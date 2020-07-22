@@ -36,11 +36,11 @@
             <plugin>
                 <groupId>io.terminus.trantor</groupId>
                 <artifactId>trantor-metadata-maven-plugin</artifactId>
-                <version>1.0.2-SNAPSHOT</version>
+                <version>1.0.3-SNAPSHOT</version>
                 <configuration>
                     <!-- 这里请替换为你自己的包名 & metastore 地址 -->
                     <modulePackageName>io.terminus.trantor.demo</modulePackageName>
-                    <metaStoreUrl>http://meta-store.services--d62e16ab1c198134f33cf8a8fda16de6.svc.cluster.local:8080</metaStoreUrl>
+                    <metaStoreURL>http://meta-store.services--d62e16ab1c198134f33cf8a8fda16de6.svc.cluster.local:8080</metaStoreURL>
                 </configuration>
                 <executions>
                     <execution>
