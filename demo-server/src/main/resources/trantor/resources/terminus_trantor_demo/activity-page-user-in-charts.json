@@ -1,0 +1,9 @@
+{
+  "name":"活动页面参与人数",
+  "title":"活动页面参与人数",
+  "desc":"过去两周参与页面活动人数",
+  "key":"activity_page_user_key",
+  "actionKey":"base_DashboardChartItem_ActivityUserAction",
+  "type":"StackedHistogram",
+  "config":{}
+}

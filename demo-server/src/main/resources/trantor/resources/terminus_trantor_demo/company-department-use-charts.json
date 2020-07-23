@@ -1,0 +1,9 @@
+{
+  "name":"厂房各地区分布情况",
+  "title":"厂房各地区分布情况",
+  "desc":"厂房各地区分布情况",
+  "key":"department_area_key",
+  "actionKey":"base_DashboardChartItem_DepartmentUseAction",
+  "type":"Histogram",
+  "config":{}
+}
