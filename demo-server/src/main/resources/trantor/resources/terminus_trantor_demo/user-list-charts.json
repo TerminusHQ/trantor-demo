@@ -1,8 +1,0 @@
-{
-  "name":"用户体量展示",
-  "title":"用户体量展示图",
-  "desc":"用户体量展示图",
-  "key":"user_total",
-  "actionKey":"terminus_trantor_demo_UserAction",
-  "type":"View"
-}

@@ -22,5 +22,13 @@
     "forModel": "terminus_trantor_demo_User",
     "template": "user-detail-view.xml",
     "isDefault": true
+  },
+  {
+    "forModel": "terminus_trantor_demo_User",
+    "isDefault": false,
+    "key": "Register_List",
+    "name": "逻辑流列表",
+    "template": "user-register-view.xml",
+    "type": "List"
   }
 ]
