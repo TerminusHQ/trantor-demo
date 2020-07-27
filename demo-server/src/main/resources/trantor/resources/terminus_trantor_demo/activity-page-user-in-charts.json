@@ -20,7 +20,12 @@
     "type":"Histogram",
     "unit":"个",
     "config":{
-
+      "query":{
+        "city":{
+          "label":"城市",
+          "type":"Text"
+        }
+      }
     }
   },
   {

@@ -1,0 +1,14 @@
+[
+  {
+    "forModel": "terminus_trantor_demo_User",
+    "key": "Register_List",
+    "name": "用户体量列表",
+    "type": "View",
+    "extra": {
+      "dataSource": "DataStore",
+      "condition": "moduleSpecificVersion == id",
+      "openViewType": "self",
+      "targetType": "List"
+    }
+  }
+]
