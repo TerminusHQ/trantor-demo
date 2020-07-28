@@ -1,9 +1,11 @@
 package io.terminus.trantor.demo.action;
 
+import com.alibaba.fastjson.JSON;
 import io.terminus.trantor.module.base.model.DashboardChartItem;
 import io.terminus.trantor.sdk.datasource.ChartDataAction;
 import io.terminus.trantor.sdk.datasource.ChartDataParams;
 import io.terminus.trantor.sdk.datasource.ChartDataResult;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -14,10 +16,12 @@ import java.util.List;
  *
  * @author: husc 2020-07-21 上午11:31
  */
+@Slf4j
 @Component
 public class UserChartAction implements ChartDataAction {
 
     public ChartDataResult load(ChartDataParams chartDataParams) {
+        log.info("chartDataParams info: " + JSON.toJSONString(chartDataParams));
         ChartDataResult chartDataResult = new ChartDataResult();
         List<DashboardChartItem> result = new ArrayList<DashboardChartItem>();
         DashboardChartItem item = new DashboardChartItem();
