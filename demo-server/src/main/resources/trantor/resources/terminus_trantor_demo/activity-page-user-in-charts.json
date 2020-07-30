@@ -97,8 +97,24 @@
     "name":"网站访问信息",
     "title":"网站访问信息",
     "desc":"网站访问信息",
-    "key":"website-visit-key",
+    "key":"website-visit-key1",
     "actionKey":"base_DashboardChartItem_WebsiteAction",
+    "type":"LineChart",
+    "unit":"次",
+    "config":{
+      "query":{
+        "registryDate":{
+          "label":"注册时间",
+          "type":"DateRange"
+        }
+      }
+    }
+  },{
+    "name":"多条折线图",
+    "title":"多条折线图",
+    "desc":"多条折线图",
+    "key":"multi_line",
+    "actionKey":"base_DashboardChartItem_MultiWebsiteAction",
     "type":"LineChart",
     "unit":"次",
     "config":{
