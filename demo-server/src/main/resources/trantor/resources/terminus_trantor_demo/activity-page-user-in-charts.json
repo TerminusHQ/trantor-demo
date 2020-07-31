@@ -34,6 +34,7 @@
     "desc":"用户体量展示图",
     "key":"user_total",
     "actionKey":"terminus_trantor_demo_User_Register_List",
+    "redirectActionKey":"terminus_trantor_demo_User_listAll",
     "type":"View",
     "unit":"个"
   },

@@ -16,4 +16,6 @@ services:
         duration: 120
 addons:
   api-gateway:
-    plan: "api-gateway:basic"
+    plan: api-gateway:basic
+  regsitercenter:
+    plan: registercenter:professional
