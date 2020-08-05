@@ -40,7 +40,7 @@
                 <configuration>
                     <!-- 这里请替换为你自己的包名 & metastore 地址 -->
                     <modulePackageName>io.terminus.trantor.demo</modulePackageName>
-                    <metaStoreUrl>http://localhost:8080</metaStoreUrl>
+                    <metaStoreURL>http://localhost:8080</metaStoreURL>
                 </configuration>
                 <executions>
                     <execution>
