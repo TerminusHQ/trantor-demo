@@ -4,7 +4,7 @@
     "title":"活动页面参与人数",
     "desc":"过去两周参与页面活动人数",
     "key":"activity_page_user_key",
-    "actionKey":"base_DashboardChartItem_ActivityUserAction",
+    "actionKey":"terminus_trantor_demo_ActivityUserAction",
     "type":"StackedHistogram",
     "unit":"人",
     "config":{
@@ -16,7 +16,7 @@
     "title":"厂房各地区分布情况",
     "desc":"厂房各地区分布情况",
     "key":"department_area_key",
-    "actionKey":"base_DashboardChartItem_DepartmentUseAction",
+    "actionKey":"terminus_trantor_demo_DepartmentUseAction",
     "type":"Histogram",
     "unit":"个",
     "config":{
@@ -43,7 +43,7 @@
     "title":"用户注册信息",
     "desc":"用户注册信息",
     "key":"userType_login",
-    "actionKey":"base_DashboardChartItem_UserLoginAction",
+    "actionKey":"terminus_trantor_demo_UserLoginAction",
     "type":"LadderDiagram",
     "unit":"个",
     "config":{
@@ -60,7 +60,7 @@
     "title":"用户数量雷达图",
     "desc":"用户数量雷达图",
     "key":"userType_radar",
-    "actionKey":"base_DashboardChartItem_UserChartAction",
+    "actionKey":"terminus_trantor_demo_UserChartAction",
     "type":"RadarChart",
     "unit":"个",
     "config":{
@@ -82,7 +82,7 @@
     "title":"用户类型信息",
     "desc":"用户类型信息",
     "key":"userType_type",
-    "actionKey":"base_DashboardChartItem_UserTypeAction",
+    "actionKey":"terminus_trantor_demo_UserTypeAction",
     "type":"PieChart",
     "unit":"个",
     "config":{
@@ -99,7 +99,7 @@
     "title":"网站访问信息",
     "desc":"网站访问信息",
     "key":"website-visit-key1",
-    "actionKey":"base_DashboardChartItem_WebsiteAction",
+    "actionKey":"terminus_trantor_demo_WebsiteAction",
     "type":"LineChart",
     "unit":"次",
     "config":{
@@ -115,7 +115,7 @@
     "title":"多条折线图",
     "desc":"多条折线图",
     "key":"multi_line",
-    "actionKey":"base_DashboardChartItem_MultiWebsiteAction",
+    "actionKey":"terminus_trantor_demo_MultiWebsiteAction",
     "type":"LineChart",
     "unit":"次",
     "config":{
@@ -126,5 +126,13 @@
         }
       }
     }
+  },{
+    "name":"极规图",
+    "title":"极规图",
+    "desc":"极规图",
+    "key":"polar_bar",
+    "actionKey":"terminus_trantor_demo_PolarBarAction",
+    "type":"PolarBar",
+    "unit":"次"
   }
 ]
