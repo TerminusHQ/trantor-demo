@@ -6,8 +6,7 @@ import io.terminus.trantor.api.annotation.TModelField;
 import io.terminus.trantor.api.annotation.TModelFieldType;
 
 /**
- * @author zhengdong.jzd@alibaba-inc.com
- * @date 2020/7/8
+ * model定义信息
  */
 @TModel(name = "用户信息")
 public class User extends BaseModel<Long> {

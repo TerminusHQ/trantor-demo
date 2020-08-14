@@ -9,43 +9,58 @@
 .
 ├── README.md
 ├── demo-api
+│   ├── demo-api.iml
 │   ├── pom.xml
 │   └── src
-│       ├── main
-│       │   ├── java
-│       │   │   └── io
-│       │   │       └── terminus
-│       │   │           └── trantor
-│       │   │               └── demo
-│       │   │                   ├── DemoModuleDefinition.java
-│       │   │                   └── model
-│       │   │                       └── User.java
-│       │   └── resources
-│       └── test
+│       └── main
 │           └── java
+│               └── io
+│                   └── terminus
+│                       └── trantor
+│                           └── demo
+│                               ├── DemoModuleDefinition.java
+│                               └── model
+│                                   └── User.java
 ├── demo-server
+│   ├── demo-server.iml
 │   ├── pom.xml
 │   └── src
-│       ├── main
-│       │   ├── java
-│       │   │   └── io
-│       │   │       └── terminus
-│       │   │           └── trantor
-│       │   │               └── demo
-│       │   │                   └── DemoApplication.java
-│       │   └── resources
-│       │       ├── application.yml
-│       │       └── trantor
-│       │           └── resources
-│       │               └── terminus_trantor_demo
-│       │                   ├── user-detail-view.xml
-│       │                   ├── user-form-view.xml
-│       │                   ├── user-list-view.xml
-│       │                   └── view-manifest.json
-│       └── test
-│           └── java
+│       └── main
+│           ├── java
+│           │   └── io
+│           │       └── terminus
+│           │           └── trantor
+│           │               └── demo
+│           │                   ├── DemoApplication.java
+│           │                   ├── action
+│           │                   │   └── UserChartAction.java
+│           │                   ├── controller
+│           │                   │   └── HealthCheckController.java
+│           │                   ├── dao
+│           │                   │   └── UserRepository.java
+│           │                   ├── dict
+│           │                   │   └── UserRegisterType.java
+│           │                   └── serveraction
+│           │                       └── UserServerAction.java
+│           └── resources
+│               ├── application.yml
+│               └── trantor
+│                   └── resources
+│                       └── terminus_trantor_demo
+│                           ├── activity-page-user-in-charts.json
+│                           ├── user-actions.json
+│                           ├── user-custom-actions.json
+│                           ├── user-detail-view.xml
+│                           ├── user-filter-admin-list-view.xml
+│                           ├── user-form-view.xml
+│                           ├── user-list-view.xml
+│                           ├── user-register-view.xml
+│                           └── view-manifest.json
+├── demo.iml
+├── dice.yml
 ├── mvnw
 ├── mvnw.cmd
+├── pipeline.yml
 └── pom.xml
 
 ```

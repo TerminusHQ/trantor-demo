@@ -4,7 +4,7 @@ import io.terminus.trantor.api.annotation.TDict;
 import io.terminus.trantor.api.annotation.typemeta.Label;
 
 /**
- * Description:
+ * Description: 字典类型的实现
  *
  * @author: husc 2020-07-23 下午3:03
  */

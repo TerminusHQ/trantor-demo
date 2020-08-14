@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Description: Dashboard功能服务端实现
- *
+ * Dashboard功能服务端实现
+ * 实现ChartDataAction接口的load方法
  */
 @Slf4j
 @Component
