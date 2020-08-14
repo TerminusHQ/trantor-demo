@@ -11,9 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Description:
+ * Description: Dashboard功能服务端实现
  *
- * @author: husc 2020-07-21 上午11:31
  */
 @Slf4j
 @Component
