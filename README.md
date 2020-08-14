@@ -9,44 +9,60 @@
 .
 ├── README.md
 ├── demo-api
+│   ├── demo-api.iml
 │   ├── pom.xml
 │   └── src
-│       ├── main
-│       │   ├── java
-│       │   │   └── io
-│       │   │       └── terminus
-│       │   │           └── trantor
-│       │   │               └── demo
-│       │   │                   ├── DemoModuleDefinition.java
-│       │   │                   └── model
-│       │   │                       └── User.java
-│       │   └── resources
-│       └── test
+│       └── main
 │           └── java
+│               └── io
+│                   └── terminus
+│                       └── trantor
+│                           └── demo
+│                               ├── DemoModuleDefinition.java
+│                               └── model
+│                                   └── User.java
 ├── demo-server
+│   ├── demo-server.iml
 │   ├── pom.xml
 │   └── src
-│       ├── main
-│       │   ├── java
-│       │   │   └── io
-│       │   │       └── terminus
-│       │   │           └── trantor
-│       │   │               └── demo
-│       │   │                   └── DemoApplication.java
-│       │   └── resources
-│       │       ├── application.yml
-│       │       └── trantor
-│       │           └── resources
-│       │               └── terminus_trantor_demo
-│       │                   ├── user-detail-view.xml
-│       │                   ├── user-form-view.xml
-│       │                   ├── user-list-view.xml
-│       │                   └── view-manifest.json
-│       └── test
-│           └── java
+│       └── main
+│           ├── java
+│           │   └── io
+│           │       └── terminus
+│           │           └── trantor
+│           │               └── demo
+│           │                   ├── DemoApplication.java
+│           │                   ├── action
+│           │                   │   └── UserChartAction.java
+│           │                   ├── controller
+│           │                   │   └── HealthCheckController.java
+│           │                   ├── dao
+│           │                   │   └── UserRepository.java
+│           │                   ├── dict
+│           │                   │   └── UserRegisterType.java
+│           │                   └── serveraction
+│           │                       └── UserServerAction.java
+│           └── resources
+│               ├── application.yml
+│               └── trantor
+│                   └── resources
+│                       └── terminus_trantor_demo
+│                           ├── activity-page-user-in-charts.json
+│                           ├── user-actions.json
+│                           ├── user-custom-actions.json
+│                           ├── user-detail-view.xml
+│                           ├── user-filter-admin-list-view.xml
+│                           ├── user-form-view.xml
+│                           ├── user-list-view.xml
+│                           ├── user-register-view.xml
+│                           └── view-manifest.json
+├── demo.iml
+├── dice.yml
 ├── mvnw
 ├── mvnw.cmd
+├── pipeline.yml
 └── pom.xml
+
 ```
 
 重点关注内容:
@@ -131,5 +147,5 @@ $trantor env
 ![](http://terminus-paas.oss-cn-hangzhou.aliyuncs.com/paas-doc/2020/07/09/7ba393b4-9733-4307-818d-939aba688e96.png)
 
 ## 3. 其他
-
-如果有其他使用上的疑问，请查阅 [Trantor 官方文档](https://trantor-interactive-doc.app.terminus.io/doc/marked/introduce)
+1、dice.yml和pipeline.yml是部署在Dice平台必备的配置文件。若不使用Dice部署，则可以忽略。
+2、如果有其他使用上的疑问，请查阅 [Trantor 官方文档](https://trantor-interactive-doc.app.terminus.io/doc/marked/introduce)

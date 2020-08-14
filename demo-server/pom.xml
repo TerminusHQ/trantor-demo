@@ -36,17 +36,35 @@
             <plugin>
                 <groupId>io.terminus.trantor</groupId>
                 <artifactId>trantor-metadata-maven-plugin</artifactId>
-                <version>1.0.2-SNAPSHOT</version>
+                <version>0.12.0-SNAPSHOT</version>
                 <configuration>
                     <!-- 这里请替换为你自己的包名 & metastore 地址 -->
                     <modulePackageName>io.terminus.trantor.demo</modulePackageName>
-                    <metaStoreURL>http://localhost:8080</metaStoreURL>
+                    <metaStoreURL>http://127.0.0.1:8082</metaStoreURL>
                 </configuration>
                 <executions>
                     <execution>
                         <phase>compile</phase>
                         <goals>
                             <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <skip>false</skip>
+                    <attach>false</attach>
+                    <mainClass>io.terminus.trantor.demo.DemoApplication</mainClass>
+                    <layout>JAR</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
                         </goals>
                     </execution>
                 </executions>
