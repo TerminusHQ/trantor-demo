@@ -32,15 +32,14 @@
 
     <build>
         <plugins>
-            <!-- 上报信息至指定 metastore, 此时会根据 @Tmodel 创建对应 table -->
             <plugin>
                 <groupId>io.terminus.trantor</groupId>
                 <artifactId>trantor-metadata-maven-plugin</artifactId>
-                <version>1.0.2-SNAPSHOT</version>
+                <version>0.12.0-SNAPSHOT</version>
                 <configuration>
-                    <!-- 这里请替换为你自己的包名 & metastore 地址 -->
-                    <modulePackageName>io.terminus.trantor.demo</modulePackageName>
-                    <metaStoreUrl>http://localhost:8080</metaStoreUrl>
+                    <!-- 这里请替换为你自己的模块key & metastore 地址 -->
+                    <moduleKey>terminus_trantor_demo</moduleKey>
+                    <repositoryUrl>http://localhost:8080/terminus/terminus_project</repositoryUrl>
                 </configuration>
                 <executions>
                     <execution>

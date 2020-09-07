@@ -1,0 +1,9 @@
+module:
+  key: terminus_trantor_demo
+  name: Trantor Demo
+  packageName: io.terminus.trantor.demo
+  version: 1.0.0-SNAPSHOT
+  description: Trantor Demo
+dependencies:
+  - key: base
+    version: 1.0.0-SNAPSHOT

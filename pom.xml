@@ -15,7 +15,9 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<terminus.trantor.version>0.10.0-SNAPSHOT</terminus.trantor.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<terminus.trantor.version>0.12.0-SNAPSHOT</terminus.trantor.version>
 	</properties>
 
 	<dependencyManagement>

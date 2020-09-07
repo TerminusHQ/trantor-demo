@@ -4,11 +4,13 @@ import io.terminus.trantor.api.annotation.BaseModel;
 import io.terminus.trantor.api.annotation.TModel;
 import io.terminus.trantor.api.annotation.TModelField;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * @author zhengdong.jzd@alibaba-inc.com
  * @date 2020/7/8
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 @TModel(name = "用户信息")
 public class User extends BaseModel<Long> {
