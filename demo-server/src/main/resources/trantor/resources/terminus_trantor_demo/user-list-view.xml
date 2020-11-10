@@ -21,11 +21,11 @@
             <Action label="创建" openViewType="Dialog" action="terminus_trantor_demo_User_toEdit" />
 
             <!-- 触发跳转至自定义 view action，跳转时传数据过滤参数, 见: user-custom-actions.json -->
-            <Action label="过滤 admin" action="terminus_trantor_demo_User_FilterAdmin"
-                :context="{
-                modelKey: 'terminus_trantor_demo_User',
-                record: {name: this.searchData.name}
-                }"/>
+<!--            <Action label="过滤 admin" action="terminus_trantor_demo_User_FilterAdmin"-->
+<!--                :context="{-->
+<!--                modelKey: 'terminus_trantor_demo_User',-->
+<!--                record: {name: this.searchData.name}-->
+<!--                }"/>-->
 
             <!-- 自定义 server action, 批量修改邮箱，具体见: UserServerAction.java -->
             <Action label="批量修改邮箱" after="Refresh" action="terminus_trantor_demo_User_UserServerAction::batchUpdateName"
