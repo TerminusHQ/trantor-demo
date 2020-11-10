@@ -1,0 +1,8 @@
+[
+  {
+    "originalKey": "userList",
+    "name": "用户列表",
+    "routingType": "Action",
+    "routeKey": "terminus_trantor_demo_User_listAll"
+  }
+]

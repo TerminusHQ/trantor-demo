@@ -1,9 +1,9 @@
 <View title="过滤admin后的用户列表">
     <Table key="table" model="terminus_trantor_demo_User">
         <Fields>
-            <Field name="name" label="用户名"/>
-            <Field name="email" label="邮箱"/>
-            <Field name="phone" label="手机"/>
+            <Field name="name"/>
+            <Field name="email"/>
+            <Field name="phone"/>
         </Fields>
     </Table>
 </View>

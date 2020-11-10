@@ -1,14 +1,23 @@
 package io.terminus.trantor.demo.model;
 
-import io.terminus.trantor.api.annotation.BaseModel;
-import io.terminus.trantor.api.annotation.TModel;
-import io.terminus.trantor.api.annotation.TModelField;
-import io.terminus.trantor.api.annotation.TModelFieldType;
+import io.terminus.trantor.api.annotation.*;
 
 /**
  * model定义信息
  */
-@TModel(name = "用户信息")
+@TModel(name = "用户信息",
+        fieldGroups = {
+                @FieldGroup(fieldName = User.name_field),
+                @FieldGroup(
+                        type = FieldGroupType.SEARCHABLE,
+                        fieldName = {User.name_field, User.email_field, User.phone_field}
+                ),
+                @FieldGroup(
+                        type = FieldGroupType.SEARCH_SHOW,
+                        fieldName = {User.name_field, User.email_field, User.phone_field}
+                )
+        },
+        enableSearch = true)
 public class User extends BaseModel<Long> {
     private static final long serialVersionUID = 1L;
 
