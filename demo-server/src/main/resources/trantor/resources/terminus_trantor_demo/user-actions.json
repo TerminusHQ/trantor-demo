@@ -1,5 +1,14 @@
 [
   {
+    "key": "listAll",
+    "forModel": "terminus_trantor_demo_User",
+    "extra": {
+      "dataSource": "DataStore",
+      "target": "terminus_trantor_demo_User_User_List",
+      "openViewType": "Self"
+    }
+  },
+  {
     "forModel": "terminus_trantor_demo_User",
     "key": "toCreate",
     "name": "新增用户",
