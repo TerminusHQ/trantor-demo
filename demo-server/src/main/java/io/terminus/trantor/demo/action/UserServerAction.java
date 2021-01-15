@@ -25,12 +25,25 @@ public class UserServerAction {
     @Autowired
     private UserRepository userRepository;
 
+
+    /**
+     * 保存用户
+     */
+    @TAction(modelClass = User.class)
+    @DSTransaction
+    public void save(User user) {
+        userRepository.saveIgnoreRelationSkipNull(user);
+    }
+
+
     /**
      * 更新用户
      */
     @TAction(modelClass = User.class)
     @DSTransaction
-    public void update(@TParam("email") User user) {
+    public void update(User user) {
         userRepository.saveIgnoreRelationSkipNull(user);
     }
+
+
 }
