@@ -1,0 +1,9 @@
+<View title="用户详情">
+    <Detail model="terminus_trantor_demo_User">
+        <Fields>
+            <Field name="name"/>
+            <Field name="email"/>
+            <Field name="phone"/>
+        </Fields>
+    </Detail>
+</View>

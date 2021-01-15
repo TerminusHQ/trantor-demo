@@ -1,0 +1,15 @@
+<View>
+    <Form model="terminus_trantor_demo_User" key="form">
+        <Fields>
+            <Field name="name" :readonly="!!this.data.id"/>
+            <Field name="email"/>
+            <Field name="phone"/>
+        </Fields>
+        <Actions>
+            <!--使用默认server action-->
+            <Action type="Submit" :show="!this.data.id" action="terminus_trantor_demo_User_create" after="GoBack"/>
+            <!--自定义 server action-->
+            <Action type="Submit" :show="!!this.data.id" action="terminus_trantor_demo_User_UserServerAction::update" after="GoBack"/>
+        </Actions>
+    </Form>
+</View>

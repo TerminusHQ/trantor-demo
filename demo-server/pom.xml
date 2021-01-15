@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>demo</artifactId>
+        <groupId>io.terminus.trantor</groupId>
+        <version>0.14.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>demo-server</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>demo-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>framework</artifactId>
+            <exclusions>
+                <!-- 这里理论上不应该显式 exelude，trantor 需要优化 -->
+                <exclusion>
+                    <groupId>com.zaxxer</groupId>
+                    <artifactId>HikariCP-java6</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 上报信息至指定 metastore, 此时会根据 @Tmodel 创建对应 table -->
+            <plugin>
+                <groupId>io.terminus.trantor</groupId>
+                <artifactId>trantor-metadata-maven-plugin</artifactId>
+                <version>${terminus.trantor.version}</version>
+                <configuration>
+                    <!-- 这里请替换为你自己的包名 & metastore 地址 -->
+                    <moduleKey>terminus_trantor_demo</moduleKey>
+                    <repositoryUrl>http://127.0.0.1:8082/terminus/first_product</repositoryUrl>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <skip>false</skip>
+                    <attach>false</attach>
+                    <mainClass>io.terminus.trantor.demo.DemoApplication</mainClass>
+                    <layout>JAR</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

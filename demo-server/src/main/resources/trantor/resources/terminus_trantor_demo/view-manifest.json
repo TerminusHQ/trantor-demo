@@ -1,0 +1,34 @@
+[
+  {
+    "key": "User_List",
+    "name": "用户列表",
+    "type": "List",
+    "forModel": "terminus_trantor_demo_User",
+    "template": "user/user-list-view.xml",
+    "isDefault": true
+  },
+  {
+    "key": "User_Form",
+    "name": "用户表单",
+    "type": "Form",
+    "forModel": "terminus_trantor_demo_User",
+    "template": "user/user-form-view.xml",
+    "isDefault": true
+  },
+  {
+    "key": "User_Create",
+    "name": "用户表单",
+    "type": "Form",
+    "forModel": "terminus_trantor_demo_User",
+    "template": "user/user-form-view.xml",
+    "isDefault": false
+  },
+  {
+    "key": "User_Detail",
+    "name": "用户详情",
+    "type": "Detail",
+    "forModel": "terminus_trantor_demo_User",
+    "template": "user/user-detail-view.xml",
+    "isDefault": true
+  }
+]
