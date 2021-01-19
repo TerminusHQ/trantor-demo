@@ -4,6 +4,7 @@
             <Field name="name" :readonly="!!this.data.id"/>
             <Field name="email"/>
             <Field name="phone"/>
+            <Field name="country"/>
         </Fields>
         <Actions>
             <!--使用默认server action-->

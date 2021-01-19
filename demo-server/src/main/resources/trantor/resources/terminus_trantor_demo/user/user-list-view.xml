@@ -5,6 +5,7 @@
                 <Field name="name"/>
                 <Field name="email"/>
                 <Field name="phone"/>
+                <Field name="country"/>
             </Fields>
         </Search>
         <RecordActions label="操作">
@@ -16,6 +17,7 @@
             <Field name="name"/>
             <Field name="email"/>
             <Field name="phone"/>
+            <Field name="country"/>
         </Fields>
         <Actions>
             <Action label="创建"  type="Create" openViewType="Dialog" action="terminus_trantor_demo_User_toCreate"/>

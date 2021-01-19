@@ -1,6 +1,8 @@
 package io.terminus.trantor.demo.model;
 
 import io.terminus.trantor.api.annotation.*;
+import io.terminus.trantor.api.annotation.typemeta.DictionaryMeta;
+import io.terminus.trantor.module.base.dictionary.Country;
 
 /**
  * model定义信息
@@ -30,6 +32,11 @@ public class User extends BaseModel<Long> {
     @TModelField(name = "电话", type = TModelFieldType.Phone)
     private String phone;
 
+    @TModelField(name = "国家", defaultValue = "China")
+    @DictionaryMeta(clazz = Country.class)
+    private String country;
+
+
     public String getName() {
         return name;
     }
@@ -52,5 +59,13 @@ public class User extends BaseModel<Long> {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 }

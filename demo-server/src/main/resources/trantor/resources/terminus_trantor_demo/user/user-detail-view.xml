@@ -4,6 +4,7 @@
             <Field name="name"/>
             <Field name="email"/>
             <Field name="phone"/>
+            <Field name="country"/>
         </Fields>
     </Detail>
 </View>

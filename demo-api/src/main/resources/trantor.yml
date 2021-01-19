@@ -1,6 +1,6 @@
 product:
-  key: first_product
-  version: 1.0.0-SNAPSHOT
+  key: example_project_product
+  version: 0.0.0-SNAPSHOT
 module:
   key: terminus_trantor_demo
   name: Terminus trantor demo
