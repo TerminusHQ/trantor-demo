@@ -40,7 +40,7 @@
                 <configuration>
                     <!-- 这里请替换为你自己的包名 & metastore 地址 -->
                     <moduleKey>terminus_trantor_demo</moduleKey>
-                    <repositoryUrl>http://127.0.0.1:8082/terminus/example_project_product</repositoryUrl>
+                    <repositoryUrl>http://127.0.0.1:8082/terminus/first_product</repositoryUrl>
                 </configuration>
                 <executions>
                     <execution>
