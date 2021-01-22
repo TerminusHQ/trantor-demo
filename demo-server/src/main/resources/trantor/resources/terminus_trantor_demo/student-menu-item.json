@@ -1,0 +1,16 @@
+[
+  {
+    "originalKey": "StudentList",
+    "name": "学生列表",
+    "routingType": "Action",
+    "desc": "这是一个学生列表",
+    "routeKey": "terminus_trantor_demo_Student_studentList"
+  },
+  {
+    "originalKey": "StudentDataStoreList",
+    "name": "学生列表",
+    "routingType": "Action",
+    "desc": "演示view action的一些特性",
+    "routeKey": "terminus_trantor_demo_Student_studentDataStoreList"
+  }
+]

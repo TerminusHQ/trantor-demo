@@ -1,0 +1,31 @@
+<View title="学生信息">
+    <Table key="table" model="terminus_trantor_demo_Student">
+
+        <Search>
+            <Fields>
+            <Field name="name" label="姓名"/>
+            <Field name="stuNo" label="学号"/>
+            <Field name="country" label="国家"/>
+            </Fields>
+        </Search>
+        <RecordActions label="操作">
+            <Action label="详情" action="terminus_trantor_demo_Student_toDetail"/>
+            <Action label="编辑" action="terminus_trantor_demo_Student_toEdit"/>
+            <Action label="删除" after="Refresh" confirm="确定要删除？"
+                    action="terminus_trantor_demo_Student_StudentServerAction::delete"/>
+
+        </RecordActions>
+
+        <Fields>
+            <Field name="name" label="姓名"/>
+            <Field name="stuNo" label="学号"/>
+            <Field name="email" label="邮箱"/>
+            <Field name="country" label="国家"/>
+        </Fields>
+        <Actions>
+            <Action label="创建" openViewType="Dialog" action="terminus_trantor_demo_Student_toCreate"/>
+        </Actions>
+
+    </Table>
+
+</View>

@@ -1,34 +1,34 @@
 [
   {
-    "key": "User_List",
-    "name": "用户列表",
+    "key": "toList",
+    "name": "学生列表",
     "type": "List",
-    "forModel": "terminus_trantor_demo_User",
-    "template": "user/user-list-view.xml",
+    "forModel": "terminus_trantor_demo_Student",
+    "template": "student/student-list-view.xml",
     "isDefault": true
   },
   {
-    "key": "User_Form",
-    "name": "用户表单",
+    "key": "toEdit",
+    "name": "编辑学生",
     "type": "Form",
-    "forModel": "terminus_trantor_demo_User",
-    "template": "user/user-form-view.xml",
+    "forModel": "terminus_trantor_demo_Student",
+    "template": "student/student-form-view.xml",
     "isDefault": true
   },
   {
-    "key": "User_Create",
-    "name": "用户表单",
-    "type": "Form",
-    "forModel": "terminus_trantor_demo_User",
-    "template": "user/user-form-view.xml",
-    "isDefault": false
-  },
-  {
-    "key": "User_Detail",
-    "name": "用户详情",
+    "key": "toDetail",
+    "name": "学生详情",
     "type": "Detail",
-    "forModel": "terminus_trantor_demo_User",
-    "template": "user/user-detail-view.xml",
+    "forModel": "terminus_trantor_demo_Student",
+    "template": "student/student-detail-view.xml",
     "isDefault": true
+  },
+  {
+    "key": "studentDataStoreList",
+    "name": "学生列表",
+    "type": "List",
+    "forModel": "terminus_trantor_demo_Student",
+    "template": "student/student-list-view.xml",
+    "isDefault": false
   }
 ]
