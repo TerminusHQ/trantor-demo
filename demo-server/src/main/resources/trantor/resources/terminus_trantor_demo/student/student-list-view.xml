@@ -1,11 +1,11 @@
-<View title="学生信息">
+<View title="学生信息管理">
     <Table key="table" model="terminus_trantor_demo_Student">
 
         <Search>
             <Fields>
-            <Field name="name" label="姓名"/>
-            <Field name="stuNo" label="学号"/>
-            <Field name="country" label="国家"/>
+            <Field name="name" />
+            <Field name="mobile" />
+            <Field name="country" />
             </Fields>
         </Search>
         <RecordActions label="操作">
@@ -17,13 +17,13 @@
         </RecordActions>
 
         <Fields>
-            <Field name="name" label="姓名"/>
-            <Field name="stuNo" label="学号"/>
-            <Field name="email" label="邮箱"/>
-            <Field name="country" label="国家"/>
+            <Field name="name" />
+            <Field name="mobile" />
+            <Field name="email"/>
+            <Field name="country" />
         </Fields>
         <Actions>
-            <Action label="创建" openViewType="Dialog" action="terminus_trantor_demo_Student_toCreate"/>
+            <Action label="新生录入" openViewType="Dialog" action="terminus_trantor_demo_Student_toCreate"/>
         </Actions>
 
     </Table>

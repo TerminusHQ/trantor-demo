@@ -30,5 +30,13 @@
     "forModel": "terminus_trantor_demo_Student",
     "template": "student/student-list-view.xml",
     "isDefault": false
+  },
+  {
+    "key": "List",
+    "name": "班级列表",
+    "type": "List",
+    "forModel": "terminus_trantor_demo_Classes",
+    "template": "classes/classes-list-view.xml",
+    "isDefault": true
   }
 ]

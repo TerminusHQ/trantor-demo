@@ -1,14 +1,17 @@
 package io.terminus.trantor.demo.action;
 
 
-import io.terminus.common.model.Paging;
+import io.terminus.trantor.api.TContext;
 import io.terminus.trantor.demo.dao.StudentRepository;
+import io.terminus.trantor.demo.model.Classes;
 import io.terminus.trantor.demo.model.Student;
 import io.terminus.trantor.sdk.datasource.MultiDataAction;
 import io.terminus.trantor.sdk.datasource.MultiDataParams;
 import io.terminus.trantor.sdk.datasource.MultiDataResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 /**
  * @author chengong
@@ -24,13 +27,19 @@ public class StudentMultiDataAction implements MultiDataAction<Student> {
     @Override
     public MultiDataResult<Student> load(MultiDataParams multiDataParams) {
 
-        int pageNo = multiDataParams.getPaging() != null ? multiDataParams.getPaging().getNo() : 1;
-        int pageSize = multiDataParams.getPaging() != null ? multiDataParams.getPaging().getSize() : 10;
+        // 获取业务维度id，对应班级的id
+        Integer id = TContext.getFrontendContext().getCurrentBusinessDimensionId();
 
-        Paging<Student> solutions = studentRepo.page(conditionSet -> {
+        List<Student> response = studentRepo.find(query -> {
+            query.where(conditionSet -> {
+                conditionSet.condition(Student.classes_field, classes -> {
+                    classes.eq(Classes.id_field, id);
+                });
+            });
+            query.selectAll();
+            query.orderBy(Student.createdAt_field, false);
+        });
 
-        }, pageNo, pageSize);
-
-        return new MultiDataResult<>(solutions.getData(), solutions.getTotal());
+        return new MultiDataResult(response, (long) response.size());
     }
 }

@@ -1,10 +1,10 @@
 <View>
     <Form model="terminus_trantor_demo_Student" key="form">
         <Fields>
-            <Field name="name" label="姓名"/>
-            <Field name="stuNo" label="学号"/>
-            <Field name="email" label="邮箱"/>
-            <Field name="country" label="国家"/>
+            <Field name="name" />
+            <Field name="mobile" />
+            <Field name="email" />
+            <Field name="country" />
         </Fields>
         <Actions>
 

@@ -1,0 +1,28 @@
+<View title="班级列表">
+    <Table key="table" model="terminus_trantor_demo_Classes">
+        <Search>
+            <Fields>
+                <Field name="name" />
+                <Field name="classesNo" />
+            </Fields>
+        </Search>
+
+        <RecordActions label="操作">
+            <Action label="详细" openViewType="Dialog" action="terminus_trantor_demo_Classes_toDetail"/>
+            <Action label="编辑" openViewType="Dialog" action="terminus_trantor_demo_Classes_toEdit"/>
+            <Action label="删除" after="Refresh" confirm="确定要删除？" action="terminus_trantor_demo_Classes_delete"/>
+        </RecordActions>
+
+
+        <Fields>
+            <Field name="name" />
+            <Field name="classesNo" />
+        </Fields>
+
+        <Actions>
+            <Action label="创建" openViewType="Dialog" action="terminus_trantor_demo_Classes_toEdit"/>
+        </Actions>
+
+    </Table>
+
+</View>

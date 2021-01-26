@@ -56,6 +56,17 @@
       "openViewType": "Self",
       "target": "terminus_trantor_demo_Student_studentDataStoreList"
     }
+  },
+  {
+  "forModel": "terminus_trantor_demo_Classes",
+  "key": "gradeList",
+  "name": "班级列表",
+  "type": "View",
+  "extra": {
+    "dataSource": "DataStore",
+    "openViewType": "Self",
+    "target": "terminus_trantor_demo_Classes_List"
   }
+}
 
 ]

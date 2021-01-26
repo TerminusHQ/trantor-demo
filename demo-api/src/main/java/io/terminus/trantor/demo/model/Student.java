@@ -31,23 +31,14 @@ public class Student extends BaseModel<Long> {
 
     private static final long serialVersionUID = -4434701696846600802L;
 
-    /**
-     * 通过TModelField注解的nullable属性添加在数据库表中name字段不可以为空,未注解的字段不会被当做模型字段,而会被直接忽略。
-     */
+
     @TModelField(name = "姓名", nullable = false)
     @NotNull(message = "姓名不可为空")
     private String name;
 
-
-    /**
-     * 通过TModelField注解的type属性添加页面输入手机号格式检查
-     */
     @TModelField(name = "手机号", type = TModelFieldType.Phone)
     private String mobile;
 
-    /**
-     * 通过TModelField注解的type属性添加页面输入邮箱格式检查
-     */
     @TModelField(name = "邮箱", type = TModelFieldType.Email)
     private String email;
 
@@ -55,9 +46,6 @@ public class Student extends BaseModel<Long> {
     @DictionaryMeta(clazz = Country.class)
     private String country;
 
-    /**
-     * 文件最大允许大小,单位 KB ,默认 Integer.MAX_VALUE ,大约 2T
-     */
     @TModelField(name = "图片")
     @ImageMeta(maxSize = 3 * 1024)
     private String image;
@@ -69,9 +57,6 @@ public class Student extends BaseModel<Long> {
     @TModelField(name = "个人履历", type = TModelFieldType.RichText)
     private String resume;
 
-    /**
-     * 通过NumberMeta注解来增加显示单位
-     */
     @TModelField(name = "薪水")
     @NumberMeta(unit = "元")
     private Double salary;
@@ -82,6 +67,10 @@ public class Student extends BaseModel<Long> {
     @TModelField(name = "学生卡")
     @RelationMeta(name = "StudentAndStudentCard")
     private StudentCard studentCard;
+
+    @TModelField(name = "所属班级")
+    @RelationMeta(name = "Classes")
+    private Classes classes;
 
     /**
      * 定义OneToMany，由于类型擦除，需要modelClass定义对端模型
@@ -185,5 +174,13 @@ public class Student extends BaseModel<Long> {
 
     public void setTeachers(List<Teacher> teachers) {
         this.teachers = teachers;
+    }
+
+    public Classes getClasses() {
+        return classes;
+    }
+
+    public void setClasses(Classes classes) {
+        this.classes = classes;
     }
 }
