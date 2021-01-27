@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 /**
  * @author ymf
  * @date 2021/1/20 10:49 上午
+ * @desc 按照班级进行业务隔离
  */
 @TBusinessDimension("以班级区分")
 public class ClassesBusinessDimension implements BusinessDimensionAction {

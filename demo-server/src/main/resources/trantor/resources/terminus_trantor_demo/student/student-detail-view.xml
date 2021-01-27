@@ -4,7 +4,7 @@
             <Field name="name" />
             <Field name="mobile" />
             <Field name="email" />
-            <Field name="country" />
+            <Field name="sex" />
         </Fields>
     </Detail>
 </View>

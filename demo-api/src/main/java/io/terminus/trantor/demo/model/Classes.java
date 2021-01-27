@@ -1,15 +1,16 @@
 package io.terminus.trantor.demo.model;
 
-import io.terminus.trantor.api.annotation.BaseModel;
-import io.terminus.trantor.api.annotation.Index;
-import io.terminus.trantor.api.annotation.TModel;
-import io.terminus.trantor.api.annotation.TModelField;
+import io.terminus.trantor.api.annotation.*;
+import io.terminus.trantor.api.annotation.typemeta.RelationMeta;
 import io.terminus.trantor.api.dimension.BusinessDimensionData;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 
 
 /**
  * @author ymf
+ * @desc 班级模型需要实现BusinessDimensionData接口 并且实现其方法
  */
 @TModel(
         name = "班级模型",
@@ -59,4 +60,5 @@ public class Classes extends BaseModel<Long> implements BusinessDimensionData {
     public void setClassesNo(String classesNo) {
         this.classesNo = classesNo;
     }
+
 }

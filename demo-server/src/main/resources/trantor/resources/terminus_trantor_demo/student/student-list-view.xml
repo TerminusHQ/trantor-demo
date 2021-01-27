@@ -5,7 +5,6 @@
             <Fields>
             <Field name="name" />
             <Field name="mobile" />
-            <Field name="country" />
             </Fields>
         </Search>
         <RecordActions label="操作">
@@ -20,7 +19,7 @@
             <Field name="name" />
             <Field name="mobile" />
             <Field name="email"/>
-            <Field name="country" />
+            <Field name="sex" />
         </Fields>
         <Actions>
             <Action label="新生录入" openViewType="Dialog" action="terminus_trantor_demo_Student_toCreate"/>
