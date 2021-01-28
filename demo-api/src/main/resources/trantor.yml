@@ -1,5 +1,5 @@
 product:
-  key: trantor_demo
+  key: trantor
   version: 1.0.0-SNAPSHOT
 module:
   key: terminus_trantor_demo
