@@ -67,6 +67,28 @@
     "openViewType": "Self",
     "target": "terminus_trantor_demo_Classes_List"
   }
-}
+},
+  {
+    "forModel": "terminus_trantor_demo_Department",
+    "key": "tree",
+    "name": "Tree列表",
+    "type": "View",
+    "extra": {
+      "dataSource": "DataStore",
+      "openViewType": "Self",
+      "target": "terminus_trantor_demo_Department_List"
+    }
+  },
+  {
+    "forModel": "terminus_trantor_demo_Department",
+    "key": "toEdit",
+    "name": "新增子级",
+    "type": "View",
+    "extra": {
+      "dataSource": "Empty",
+      "openViewType": "Dialog",
+      "target": "terminus_trantor_demo_Department_toEdit"
+    }
+  }
 
 ]

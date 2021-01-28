@@ -38,5 +38,21 @@
     "forModel": "terminus_trantor_demo_Classes",
     "template": "classes/classes-list-view.xml",
     "isDefault": true
+  },
+  {
+    "key": "List",
+    "name": "Tree列表",
+    "type": "List",
+    "forModel": "terminus_trantor_demo_Department",
+    "template": "department/dapartment-list-view.xml",
+    "isDefault": true
+  },
+  {
+    "key": "toEdit",
+    "name": "编辑部门",
+    "type": "Form",
+    "forModel": "terminus_trantor_demo_Department",
+    "template": "department/department-form-view.xml",
+    "isDefault": true
   }
 ]

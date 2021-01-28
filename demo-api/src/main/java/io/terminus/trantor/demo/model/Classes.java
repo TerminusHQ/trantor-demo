@@ -1,12 +1,8 @@
 package io.terminus.trantor.demo.model;
 
 import io.terminus.trantor.api.annotation.*;
-import io.terminus.trantor.api.annotation.typemeta.RelationMeta;
 import io.terminus.trantor.api.dimension.BusinessDimensionData;
 import org.jetbrains.annotations.NotNull;
-
-import java.util.List;
-
 
 /**
  * @author ymf

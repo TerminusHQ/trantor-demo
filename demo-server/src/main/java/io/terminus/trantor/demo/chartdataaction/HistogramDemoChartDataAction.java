@@ -38,14 +38,10 @@ public class HistogramDemoChartDataAction implements ChartDataAction {
             DashboardChartItem item1 = new DashboardChartItem();
             item1.setLabel(current.getName());
 
-            List<Student> response = studentRepository.find(query -> {
-                        query.where(conditionSet -> {
-                            conditionSet.condition(Student.classes_field, classes -> {
-                                classes.eq(Classes.id_field, current.getId());
-                            });
-                        });
-                    });
-            item1.setValue(Long.valueOf(response.size()));
+            List<Student> response = studentRepository.find(query -> query.where(conditionSet -> {
+                conditionSet.condition(Student.classes_field, classes -> classes.eq(Classes.id_field, current.getId()));
+            }));
+            item1.setValue((long) response.size());
             data.add(item1);
         }
 

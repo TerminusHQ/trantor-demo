@@ -25,7 +25,7 @@ import java.util.List;
 public class StudentMultiDataAction implements MultiDataAction<Student> {
 
     @Autowired
-    private StudentRepository studentRepo;
+    private final StudentRepository studentRepo;
 
     public StudentMultiDataAction(StudentRepository studentRepo) {
         this.studentRepo = studentRepo;
@@ -39,9 +39,7 @@ public class StudentMultiDataAction implements MultiDataAction<Student> {
 
         List<Student> response = studentRepo.find(query -> {
             query.where(conditionSet -> {
-                conditionSet.condition(Student.classes_field, classes -> {
-                    classes.eq(Classes.id_field, id);
-                });
+                conditionSet.condition(Student.classes_field, classes -> classes.eq(Classes.id_field, id));
                 QueryValues searchValues = multiDataParams.getSearchValues();
                 if(searchValues.size()!=0){
                     if(!Arguments.isNullOrEmpty(searchValues.getOneValue(Student.name_field)) ){

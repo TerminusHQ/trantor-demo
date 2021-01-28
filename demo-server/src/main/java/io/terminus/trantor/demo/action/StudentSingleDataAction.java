@@ -18,6 +18,10 @@ public class StudentSingleDataAction implements SingleDataAction<Student> {
     @Autowired
     private StudentRepository studentRepo;
 
+    public StudentSingleDataAction(StudentRepository studentRepo) {
+        this.studentRepo = studentRepo;
+    }
+
     @Override
     public SingleDataResult<Student> load(SingleDataParams singleDataParams) {
         Integer id = singleDataParams.getQueryValues().getOneValue("id");

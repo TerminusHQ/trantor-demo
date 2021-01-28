@@ -12,5 +12,12 @@
     "routingType": "Action",
     "desc": "班级列表",
     "routeKey": "terminus_trantor_demo_Classes_gradeList"
+  },
+  {
+    "originalKey": "treeList",
+    "name": "学校部门",
+    "routingType": "Action",
+    "desc": "学校部门结构",
+    "routeKey": "terminus_trantor_demo_Department_tree"
   }
 ]

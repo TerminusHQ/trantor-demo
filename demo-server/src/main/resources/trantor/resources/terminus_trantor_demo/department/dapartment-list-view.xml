@@ -1,0 +1,14 @@
+<View title="部门列表">
+
+        <CascadeList model="terminus_trantor_demo_Department"
+                     depthLimit="4" parentField="parent"
+                     dataSourceAction="terminus_trantor_demo_Department_SchoolDeparementTreeAction" onAdd="terminus_trantor_demo_Department_toEdit"  >
+            <Fields>
+                <Field name="name"/>
+            </Fields>
+            <RecordActions>
+                <Action label="删除" action="terminus_trantor_demo_Department_delete" after="Refresh" />
+            </RecordActions>
+        </CascadeList>
+
+</View>

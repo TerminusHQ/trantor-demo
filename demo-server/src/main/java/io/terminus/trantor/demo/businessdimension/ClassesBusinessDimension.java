@@ -21,7 +21,11 @@ import java.util.stream.Collectors;
 public class ClassesBusinessDimension implements BusinessDimensionAction {
 
     @Autowired
-    private ClassesRepository classesRepository;
+    private final ClassesRepository classesRepository;
+
+    public ClassesBusinessDimension(ClassesRepository classesRepository) {
+        this.classesRepository = classesRepository;
+    }
 
     @Override
     public List<BusinessDimensionData> load() {
