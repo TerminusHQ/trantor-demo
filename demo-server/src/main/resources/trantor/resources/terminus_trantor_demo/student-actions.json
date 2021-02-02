@@ -59,7 +59,7 @@
   },
   {
   "forModel": "terminus_trantor_demo_Classes",
-  "key": "gradeList",
+  "key": "listAll",
   "name": "班级列表",
   "type": "View",
   "extra": {
