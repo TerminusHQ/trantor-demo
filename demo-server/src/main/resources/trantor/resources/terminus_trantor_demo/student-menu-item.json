@@ -1,0 +1,23 @@
+[
+  {
+    "originalKey": "studentList",
+    "name": "学生列表",
+    "routingType": "Action",
+    "desc": "这是一个学生列表",
+    "routeKey": "terminus_trantor_demo_Student_studentList"
+  },
+  {
+    "originalKey": "ClassesList",
+    "name": "班级列表",
+    "routingType": "Action",
+    "desc": "班级列表",
+    "routeKey": "terminus_trantor_demo_Classes_listAll"
+  },
+  {
+    "originalKey": "treeList",
+    "name": "学校部门",
+    "routingType": "Action",
+    "desc": "学校部门结构",
+    "routeKey": "terminus_trantor_demo_Department_tree"
+  }
+]

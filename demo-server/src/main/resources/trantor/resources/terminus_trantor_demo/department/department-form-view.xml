@@ -1,0 +1,15 @@
+<View>
+    <Form model="terminus_trantor_demo_Department" key="form">
+        <Fields>
+            <Field name="name" />
+            <Field name="code" />
+            <Field name="parent" />
+
+        </Fields>
+        <Actions>
+
+            <Action type="Submit" :show="!this.data.id" action="terminus_trantor_demo_Department_create"
+                    after="GoBack"/>
+        </Actions>
+    </Form>
+</View>

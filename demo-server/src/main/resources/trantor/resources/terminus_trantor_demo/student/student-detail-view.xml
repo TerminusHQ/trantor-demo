@@ -1,0 +1,10 @@
+<View title="学生详情">
+    <Detail model="terminus_trantor_demo_Student">
+        <Fields>
+            <Field name="name" />
+            <Field name="mobile" />
+            <Field name="email" />
+            <Field name="sex" />
+        </Fields>
+    </Detail>
+</View>

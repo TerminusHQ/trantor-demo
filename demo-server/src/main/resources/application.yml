@@ -1,0 +1,3 @@
+trantor:
+  # 模型元信息定义类
+  mainModule: terminus_trantor_demo

@@ -1,0 +1,94 @@
+[
+  {
+    "forModel": "terminus_trantor_demo_Student",
+    "key": "studentList",
+    "name": "学生列表",
+    "type": "View",
+    "extra": {
+      "dataSource": "Action",
+      "openViewType": "Self",
+      "actionKey": "terminus_trantor_demo_Student_StudentMultiDataAction",
+      "target": "terminus_trantor_demo_Student_toList"
+    }
+  },
+  {
+    "forModel": "terminus_trantor_demo_Student",
+    "key": "toCreate",
+    "name": "创建",
+    "type": "View",
+    "extra": {
+      "dataSource": "Empty",
+      "openViewType": "Dialog",
+      "target": "terminus_trantor_demo_Student_toEdit"
+    }
+  },
+  {
+    "forModel": "terminus_trantor_demo_Student",
+    "key": "toEdit",
+    "name": "修改",
+    "type": "View",
+    "extra": {
+      "dataSource": "DataStore",
+      "openViewType": "Dialog",
+      "target": "terminus_trantor_demo_Student_toEdit"
+    }
+  },
+  {
+    "forModel": "terminus_trantor_demo_Student",
+    "key": "toDetail",
+    "name": "学生详情",
+    "type": "View",
+    "extra": {
+      "dataSource": "Action",
+      "openViewType": "Dialog",
+      "actionKey": "terminus_trantor_demo_Student_StudentSingleDataAction",
+      "target": "terminus_trantor_demo_Student_toDetail"
+    }
+  },
+  {
+    "forModel": "terminus_trantor_demo_Student",
+    "key": "studentDataStoreList",
+    "name": "学生列表",
+    "type": "View",
+    "extra": {
+      "dataSource": "DataStore",
+      "condition":  "status != Frozen" ,
+      "openViewType": "Self",
+      "target": "terminus_trantor_demo_Student_studentDataStoreList"
+    }
+  },
+  {
+  "forModel": "terminus_trantor_demo_Classes",
+  "key": "listAll",
+  "name": "班级列表",
+  "type": "View",
+  "extra": {
+    "dataSource": "DataStore",
+    "openViewType": "Self",
+    "target": "terminus_trantor_demo_Classes_List"
+  }
+},
+  {
+    "forModel": "terminus_trantor_demo_Department",
+    "key": "tree",
+    "name": "Tree列表",
+    "type": "View",
+    "extra": {
+      "dataSource": "DataStore",
+      "openViewType": "Self",
+      "target": "terminus_trantor_demo_Department_List"
+    }
+  },
+  {
+    "forModel": "terminus_trantor_demo_Department",
+    "key": "toEdit",
+    "name": "新增子级",
+    "type": "View",
+    "extra": {
+      "dataSource": "Empty",
+      "openViewType": "Dialog",
+      "target": "terminus_trantor_demo_Department_toEdit"
+    }
+  }
+
+]
