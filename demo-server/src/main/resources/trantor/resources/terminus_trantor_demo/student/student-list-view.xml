@@ -1,5 +1,5 @@
 <View title="学生信息管理">
-    <Table key="table" model="terminus_trantor_demo_Student">
+    <Table key="table" model="trantor_demo_Student">
 
         <Search>
             <Fields>
@@ -8,10 +8,10 @@
             </Fields>
         </Search>
         <RecordActions label="操作">
-            <Action label="详情" action="terminus_trantor_demo_Student_toDetail"/>
-            <Action label="编辑" action="terminus_trantor_demo_Student_toEdit"/>
+            <Action label="详情" action="trantor_demo_Student_toDetail"/>
+            <Action label="编辑" action="trantor_demo_Student_toEdit"/>
             <Action label="删除" after="Refresh" confirm="确定要删除？"
-                    action="terminus_trantor_demo_Student_StudentServerAction::delete"/>
+                    action="trantor_demo_Student_StudentServerAction::delete"/>
 
         </RecordActions>
 
@@ -22,7 +22,7 @@
             <Field name="sex" />
         </Fields>
         <Actions>
-            <Action label="新生录入" openViewType="Dialog" action="terminus_trantor_demo_Student_toCreate"/>
+            <Action label="新生录入" openViewType="Dialog" action="trantor_demo_Student_toCreate"/>
         </Actions>
 
     </Table>

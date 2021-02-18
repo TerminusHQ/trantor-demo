@@ -1,5 +1,5 @@
 <View>
-    <Form model="terminus_trantor_demo_Department" key="form">
+    <Form model="trantor_demo_Department" key="form">
         <Fields>
             <Field name="name" />
             <Field name="code" />
@@ -8,7 +8,7 @@
         </Fields>
         <Actions>
 
-            <Action type="Submit" :show="!this.data.id" action="terminus_trantor_demo_Department_create"
+            <Action type="Submit" :show="!this.data.id" action="trantor_demo_Department_create"
                     after="GoBack"/>
         </Actions>
     </Form>

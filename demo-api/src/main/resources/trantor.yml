@@ -2,7 +2,7 @@ product:
   key: trantor
   version: 1.0.0-SNAPSHOT
 module:
-  key: terminus_trantor_demo
+  key: trantor_demo
   name: Terminus trantor demo
   packageName: io.terminus.trantor.demo
   version: 1.0.0-SNAPSHOT

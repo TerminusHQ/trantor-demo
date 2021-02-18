@@ -3,7 +3,7 @@
     "key": "toList",
     "name": "学生列表",
     "type": "List",
-    "forModel": "terminus_trantor_demo_Student",
+    "forModel": "trantor_demo_Student",
     "template": "student/student-list-view.xml",
     "isDefault": true
   },
@@ -11,7 +11,7 @@
     "key": "toEdit",
     "name": "编辑学生",
     "type": "Form",
-    "forModel": "terminus_trantor_demo_Student",
+    "forModel": "trantor_demo_Student",
     "template": "student/student-form-view.xml",
     "isDefault": true
   },
@@ -19,7 +19,7 @@
     "key": "toDetail",
     "name": "学生详情",
     "type": "Detail",
-    "forModel": "terminus_trantor_demo_Student",
+    "forModel": "trantor_demo_Student",
     "template": "student/student-detail-view.xml",
     "isDefault": true
   },
@@ -27,7 +27,7 @@
     "key": "studentDataStoreList",
     "name": "学生列表",
     "type": "List",
-    "forModel": "terminus_trantor_demo_Student",
+    "forModel": "trantor_demo_Student",
     "template": "student/student-list-view.xml",
     "isDefault": false
   },
@@ -35,7 +35,7 @@
     "key": "List",
     "name": "班级列表",
     "type": "List",
-    "forModel": "terminus_trantor_demo_Classes",
+    "forModel": "trantor_demo_Classes",
     "template": "classes/classes-list-view.xml",
     "isDefault": true
   },
@@ -43,7 +43,7 @@
     "key": "List",
     "name": "Tree列表",
     "type": "List",
-    "forModel": "terminus_trantor_demo_Department",
+    "forModel": "trantor_demo_Department",
     "template": "department/dapartment-list-view.xml",
     "isDefault": true
   },
@@ -51,7 +51,7 @@
     "key": "toEdit",
     "name": "编辑部门",
     "type": "Form",
-    "forModel": "terminus_trantor_demo_Department",
+    "forModel": "trantor_demo_Department",
     "template": "department/department-form-view.xml",
     "isDefault": true
   }

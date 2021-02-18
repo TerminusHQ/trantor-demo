@@ -4,7 +4,7 @@
     "title": "班级学生数量",
     "desc": "各个班级的学生数量",
     "key": "dashboard_demo_histogram",
-    "actionKey": "terminus_trantor_demo_HistogramDemoChartDataAction",
+    "actionKey": "trantor_demo_HistogramDemoChartDataAction",
     "type": "Histogram"
   }
 ]
