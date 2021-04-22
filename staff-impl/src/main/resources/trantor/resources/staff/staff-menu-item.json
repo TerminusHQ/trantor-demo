@@ -1,0 +1,23 @@
+[
+  {
+    "originalKey": "staffList",
+    "name": "扩展商品列表",
+    "routingType": "View",
+    "desc": "",
+    "routeKey": "staff_Staff_StaffList"
+  },
+  {
+    "originalKey": "positionList",
+    "name": "岗位列表",
+    "routingType": "View",
+    "desc": "",
+    "routeKey": "staff_Position_PositionList"
+  },
+  {
+    "originalKey": "departmentList",
+    "name": "部门列表",
+    "routingType": "View",
+    "desc": "",
+    "routeKey": "staff_Department_DepartmentList"
+  }
+]

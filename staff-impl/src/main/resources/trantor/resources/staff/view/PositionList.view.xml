@@ -1,0 +1,31 @@
+<View type="List" forModel="staff_Position" title="岗位列表">
+    <Table model="staff_Position" dataCondition="">
+        <Search>
+            <Fields>
+                <Field name="name" label="岗位名称"/>
+                <Field name="type" label="岗位类型"/>
+                <Field name="status" label="状态"/>
+            </Fields>
+        </Search>
+        <Fields>
+            <Field name="code" label="岗位编码"/>
+            <Field name="name" label="岗位名称"/>
+            <Field name="type" label="岗位类型"/>
+            <Field name="remark" label="岗位详情"/>
+            <Field name="status" label="状态"/>
+        </Fields>
+        <RecordActions label="操作">
+            <Action label="详情" targetView="staff_Position_PositionDetails"/>
+            <Action label="编辑" targetView="staff_Position_PositionEdit"/>
+            <Action type="Delete" label="删除" after="Refresh"
+                    logicFunction="DeletePositionBuiltInFunc" confirm="确定删除吗？" />
+        </RecordActions>
+        <Actions>
+            <Action label="新建岗位" targetView="staff_Position_CreatePositionFlow"/>
+        </Actions>
+    </Table>
+</View>
+
+
+
+

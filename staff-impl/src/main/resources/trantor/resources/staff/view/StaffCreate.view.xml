@@ -1,0 +1,17 @@
+<View type="Form" forModel="staff_Staff" title="员工创建">
+    <Form model="staff_Staff">
+        <Fields>
+            <Field name="staffName" label="员工名称"/>
+            <Field name="position" label="岗位"/>
+            <Field name="department" label="部门"/>
+            <Field name="mobile" label="手机号"/>
+            <Field name="email" label="邮箱"/>
+        </Fields>
+        <Actions>
+            <Action type="Submit" label="提交" after="GoBack"
+                    logicFlow="staff_CreateStaffFlow"/>
+        </Actions>
+    </Form>
+</View>
+
+

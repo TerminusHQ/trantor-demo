@@ -1,0 +1,12 @@
+<View title="部门详情" forModel="staff_Department" type="Detail" >
+    <Detail model="staff_Department" dataCondition="id = ?" dataParams="[pageContext.record.id]">
+        <Fields>
+            <Field name="name" label="部门名称"/>
+            <Field name="code" label="部门编码"/>
+            <Field name="parent" label="上级部门"/>
+            <Field name="manager" label="主管"/>
+            <Field name="remark" label="部门详情"/>
+        </Fields>
+    </Detail>
+</View>
+

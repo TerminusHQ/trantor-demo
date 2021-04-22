@@ -1,0 +1,16 @@
+<View type="Form" forModel="staff_Department" title="部门创建">
+    <Form model="staff_Department">
+        <Fields>
+            <Field name="name" label="部门名称"/>
+            <Field name="parent" label="上级部门"/>
+            <Field name="manager" label="主管"/>
+            <Field name="remark" label="部门详情"/>
+        </Fields>
+        <Actions>
+            <Action type="Submit" label="提交" after="GoBack"
+                    logicFunction="staff_CreateDepartmentBuiltInFunc"/>
+        </Actions>
+    </Form>
+</View>
+
+
