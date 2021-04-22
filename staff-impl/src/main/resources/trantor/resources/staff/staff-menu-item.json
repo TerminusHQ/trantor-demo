@@ -1,7 +1,7 @@
 [
   {
     "originalKey": "staffList",
-    "name": "扩展商品列表",
+    "name": "员工列表",
     "routingType": "View",
     "desc": "",
     "routeKey": "staff_Staff_StaffList"
