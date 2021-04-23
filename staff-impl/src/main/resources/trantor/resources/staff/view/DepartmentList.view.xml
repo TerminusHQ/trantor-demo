@@ -21,7 +21,7 @@
                     logicFunction="DeleteDepartmentBuiltInFunc" confirm="确定删除吗？" />
         </RecordActions>
         <Actions>
-            <Action label="新建岗位" targetView="staff_Department_DepartmentCreate"/>
+            <Action label="新建部门" targetView="staff_Department_DepartmentCreate"/>
         </Actions>
     </Table>
 </View>

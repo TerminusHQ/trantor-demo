@@ -8,7 +8,7 @@
         </Fields>
         <Actions>
             <Action type="Submit" label="提交" after="GoBack"
-                    logicFunction="staff_CreatePositionBuiltInFunc"/>
+                    logicFlow="staff_CreatePositionFlow"/>
         </Actions>
     </Form>
 </View>

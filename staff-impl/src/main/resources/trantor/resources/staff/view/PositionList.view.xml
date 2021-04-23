@@ -21,7 +21,7 @@
                     logicFunction="DeletePositionBuiltInFunc" confirm="确定删除吗？" />
         </RecordActions>
         <Actions>
-            <Action label="新建岗位" targetView="staff_Position_CreatePositionFlow"/>
+            <Action label="新建岗位" targetView="staff_Position_PositionCreate"/>
         </Actions>
     </Table>
 </View>
