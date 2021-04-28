@@ -1,0 +1,34 @@
+<View type="List" forModel="demo_Company" title="公司列表">
+    <Table model="demo_Company" dataCondition="">
+        <Search>
+            <Fields>
+                <Field name="name" label="公司名称"/>
+                <Field name="shortName" label="公司简称"/>
+                <Field name="status" label="状态"/>
+            </Fields>
+        </Search>
+        <Fields>
+            <Field name="name" label="公司名称"/>
+            <Field name="code" label="公司编码"/>
+            <Field name="shortName" label="公司简称"/>
+            <Field name="abbreviation" label="公司缩写"/>
+            <Field name="parent" label="上级公司"/>
+            <Field name="address" label="地址"/>
+            <Field name="remark" label="公司详情"/>
+            <Field name="status" label="状态"/>
+        </Fields>
+        <RecordActions label="操作">
+            <Action label="详情" targetView="demo_Company_CompanyDetails"/>
+            <Action label="编辑" targetView="demo_Company_CompanyEdit"/>
+            <Action type="Delete" label="删除" after="Refresh"
+                    logicFunction="demo_DeleteCompanyBuiltInFunc" confirm="确定删除吗？" />
+        </RecordActions>
+        <Actions>
+            <Action label="新建公司" targetView="demo_Company_CompanyCreate"/>
+        </Actions>
+    </Table>
+</View>
+
+
+
+

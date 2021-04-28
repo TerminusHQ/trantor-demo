@@ -1,9 +1,0 @@
-product:
-  key: gaia
-  version: 1.0.0-SNAPSHOT
-module:
-  key: staff
-  name: 员工模块
-  packageName: io.terminus.trantor.demo.staff
-  version: 1.0.0-SNAPSHOT
-  description: Demo 的员工模块

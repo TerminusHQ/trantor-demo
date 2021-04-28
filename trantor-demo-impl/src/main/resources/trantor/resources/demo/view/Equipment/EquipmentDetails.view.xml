@@ -1,0 +1,11 @@
+<View title="部门详情" forModel="demo_Equipment" type="Detail" >
+    <Detail model="demo_Equipment" dataCondition="id = ?" dataParams="[pageContext.record.id]">
+        <Fields>
+            <Field name="code" label="设备编码"/>
+            <Field name="type" label="设备类型"/>
+            <Field name="status" label="状态"/>
+            <Field name="demos" label="设备使用人"/>
+        </Fields>
+    </Detail>
+</View>
+

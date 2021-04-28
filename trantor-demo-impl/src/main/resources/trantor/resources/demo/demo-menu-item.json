@@ -1,0 +1,37 @@
+[
+  {
+    "originalKey": "staffList",
+    "name": "员工列表",
+    "routingType": "View",
+    "desc": "",
+    "routeKey": "demo_Staff_StaffList"
+  },
+  {
+    "originalKey": "positionList",
+    "name": "岗位列表",
+    "routingType": "View",
+    "desc": "",
+    "routeKey": "demo_Position_PositionList"
+  },
+  {
+    "originalKey": "departmentList",
+    "name": "部门列表",
+    "routingType": "View",
+    "desc": "",
+    "routeKey": "demo_Department_DepartmentList"
+  },
+  {
+    "originalKey": "equipmentList",
+    "name": "设备列表",
+    "routingType": "View",
+    "desc": "",
+    "routeKey": "demo_Equipment_EquipmentList"
+  },
+  {
+    "originalKey": "companyList",
+    "name": "公司列表",
+    "routingType": "View",
+    "desc": "",
+    "routeKey": "demo_Company_CompanyList"
+  }
+]

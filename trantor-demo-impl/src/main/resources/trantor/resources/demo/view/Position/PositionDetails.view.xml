@@ -1,0 +1,12 @@
+<View title="员工详情" forModel="demo_Position" type="Detail">
+    <Detail model="demo_Position" dataCondition="id = ?" dataParams="[pageContext.record.id]">
+        <Fields>
+            <Field name="code" label="岗位编码"/>
+            <Field name="name" label="岗位名称"/>
+            <Field name="type" label="岗位类型"/>
+            <Field name="remark" label="岗位详情"/>
+            <Field name="status" label="状态"/>
+        </Fields>
+    </Detail>
+</View>
+

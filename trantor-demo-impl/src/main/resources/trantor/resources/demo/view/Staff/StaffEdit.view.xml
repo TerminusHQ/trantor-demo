@@ -1,0 +1,21 @@
+<View title="员工编辑" forModel="demo_Staff" type="Form">
+    <Form model="demo_Staff" dataCondition="id = ?" dataParams="[pageContext.record.id]">
+        <Fields>
+            <Field name="staffName" label="员工名称"/>
+            <Field name="position" label="岗位"/>
+            <Field name="department" label="部门"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="mobile" label="手机号"/>
+            <Field name="email" label="邮箱"/>
+            <Field name="equipments" label="办公设备">
+                <RenderType>
+                    <ModelSelect dataCondition="status = 'Enable'"/>
+                </RenderType>
+            </Field>
+        </Fields>
+        <Actions>
+        <Action type="Submit" :show="!this.data.id" logicFlow="demo_CreateStaffFlow" after="GoBack" layout="Footer"/>
+        <Action type="Submit" :show="!!this.data.id" logicFlow="demo_UpdateStaffFlow" after="GoBack" layout="Footer"/>
+    </Actions>
+    </Form>
+</View>

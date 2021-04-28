@@ -1,0 +1,22 @@
+<View type="Form" forModel="demo_Staff" title="员工创建">
+    <Form model="demo_Staff">
+        <Fields>
+            <Field name="staffName" label="员工名称"/>
+            <Field name="position" label="岗位"/>
+            <Field name="department" label="部门"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="mobile" label="手机号"/>
+            <Field name="email" label="邮箱"/>
+            <Field name="equipments" label="办公设备">
+                <RenderType>
+                    <ModelSelect dataCondition="status = 'Enable'"/>
+                </RenderType>
+            </Field>
+        </Fields>
+        <Actions>
+            <Action type="Submit" label="提交" after="GoBack"
+                    logicFlow="demo_CreateStaffFlow"/>
+        </Actions>
+    </Form>
+</View>
+

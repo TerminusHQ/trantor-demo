@@ -1,0 +1,30 @@
+<View type="List" forModel="demo_Equipment" title="设备列表">
+    <Table model="demo_Equipment" dataCondition="">
+        <Search>
+            <Fields>
+                <Field name="code" label="设备编码"/>
+                <Field name="type" label="设备类型"/>
+                <Field name="status" label="状态"/>
+                <Field name="staffs" label="设备使用人"/>
+            </Fields>
+        </Search>
+        <Fields>
+            <Field name="code" label="设备编码"/>
+            <Field name="type" label="设备类型"/>
+            <Field name="status" label="状态"/>
+            <Field name="staffs" label="设备使用人"/>
+        </Fields>
+        <RecordActions label="操作">
+            <Action label="详情" targetView="demo_Equipment_EquipmentDetails"/>
+            <Action type="Delete" label="删除" after="Refresh"
+                    logicFunction="demo_DeleteEquipmentBuiltInFunc" confirm="确定删除吗？" />
+        </RecordActions>
+        <Actions>
+            <Action label="新建设备" targetView="demo_Equipment_EquipmentCreate"/>
+        </Actions>
+    </Table>
+</View>
+
+
+
+

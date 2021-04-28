@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>trantor-demo</artifactId>
+        <groupId>io.terminus.trantor.demo</groupId>
+        <version>0.16.3.RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>trantor-demo-impl</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.terminus.trantor.demo</groupId>
+            <artifactId>trantor-demo-api</artifactId>
+            <version>${trantor.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-sdk</artifactId>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.terminus.trantor</groupId>
+                <artifactId>metadata-maven-plugin</artifactId>
+                <version>${trantor.version}</version>
+                <configuration>
+                    <moduleKey>demo</moduleKey>
+                    <!--上报MetaStore地址，terminus为tenant code，gaia为 trantor.yml中定义的project key-->
+                    <repositoryUrl>http://localhost:8082/terminus/gaia</repositoryUrl>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

@@ -2,27 +2,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>trantor-parent</artifactId>
         <groupId>io.terminus.trantor</groupId>
-        <version>0.16.2-SNAPSHOT</version>
+        <version>0.16.3.RELEASE</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.terminus.trantor.demo</groupId>
-    <artifactId>demo-parent</artifactId>
+    <artifactId>trantor-demo</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
-
+    <version>0.16.3.RELEASE</version>
     <modules>
-        <module>staff-api</module>
-        <module>staff-impl</module>
-        <module>staff-runtime</module>
+        <module>trantor-demo-api</module>
+        <module>trantor-demo-impl</module>
+        <module>trantor-demo-runtime</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <trantor.version>${project.version}</trantor.version>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.compilerVersion>${java.version}</maven.compiler.compilerVersion>
     </properties>
+
 
 </project>

@@ -1,0 +1,14 @@
+<View type="Form" forModel="demo_Equipment" title="设备创建">
+    <Form model="demo_Equipment">
+        <Fields>
+            <Field name="type" label="设备类型"/>
+            <Field name="status" label="状态"/>
+        </Fields>
+        <Actions>
+            <Action type="Submit" label="提交" after="GoBack"
+                    logicFunction="demo_CreateEquipmentBuiltInFunc"/>
+        </Actions>
+    </Form>
+</View>
+
+

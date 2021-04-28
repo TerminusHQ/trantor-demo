@@ -1,0 +1,16 @@
+<View type="Form" forModel="demo_Position" title="岗位创建">
+    <Form model="demo_Position">
+        <Fields>
+            <Field name="name" label="岗位名称"/>
+            <Field name="type" label="岗位类型"/>
+            <Field name="remark" label="岗位详情"/>
+            <Field name="status" label="状态"/>
+        </Fields>
+        <Actions>
+            <Action type="Submit" label="提交" after="GoBack"
+                    logicFlow="demo_CreatePositionFlow"/>
+        </Actions>
+    </Form>
+</View>
+
+

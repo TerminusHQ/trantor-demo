@@ -1,0 +1,33 @@
+<View type="List" forModel="demo_Department" title="部门列表">
+    <Table model="demo_Department" dataCondition="">
+        <Search>
+            <Fields>
+                <Field name="name" label="部门名称"/>
+                <Field name="code" label="部门编码"/>
+                <Field name="company" label="所属公司"/>
+                <Field name="manager" label="主管"/>
+            </Fields>
+        </Search>
+        <Fields>
+            <Field name="name" label="部门名称"/>
+            <Field name="code" label="部门编码"/>
+            <Field name="parent" label="上级部门"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="manager" label="主管"/>
+            <Field name="remark" label="部门详情"/>
+        </Fields>
+        <RecordActions label="操作">
+            <Action label="详情" targetView="demo_Department_DepartmentDetails"/>
+            <Action label="编辑" targetView="demo_Department_DepartmentEdit"/>
+            <Action type="Delete" label="删除" after="Refresh"
+                    logicFunction="demo_DeleteDepartmentBuiltInFunc" confirm="确定删除吗？" />
+        </RecordActions>
+        <Actions>
+            <Action label="新建部门" targetView="demo_Department_DepartmentCreate"/>
+        </Actions>
+    </Table>
+</View>
+
+
+
+
