@@ -2,6 +2,7 @@
     <Form model="demo_Equipment">
         <Fields>
             <Field name="type" label="设备类型"/>
+            <Field name="company" label="所属公司"/>
             <Field name="status" label="状态"/>
         </Fields>
         <Actions>

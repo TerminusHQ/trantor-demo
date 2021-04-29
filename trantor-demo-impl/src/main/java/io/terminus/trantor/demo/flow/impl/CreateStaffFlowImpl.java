@@ -30,6 +30,7 @@ public class CreateStaffFlowImpl implements CreateStaffFlow {
     public Staff execute(Staff staff) {
         // 调用function创建员工
         Staff itemBOResult = createStaffFunc.execute(staff);
+        //判断员工的设备是否不为空
         if (staff.getEquipments()!=null){
             // 调用function创建中间表
             Collection<StaffAndEquipment> execute = createStaffAndEquFunc.execute(staff);

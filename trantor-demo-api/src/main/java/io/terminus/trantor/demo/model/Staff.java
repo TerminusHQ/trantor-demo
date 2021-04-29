@@ -19,7 +19,7 @@ import java.util.List;
 @Data
 @ToString(callSuper = true)
 @Model(
-        name = "员工",
+        name = "员工模型",
         mainField = "staffName",
         fieldGroups = {
                 @FieldGroup(fieldName = {Staff.staffNumber_field, Staff.staffName_field}),
@@ -45,7 +45,8 @@ public class Staff extends BaseModel<Long> {
     @NotNull(message = "部门不能为空")
     private Department department;
 
-    @Field(name = "所属公司")
+    @Field(name = "所属公司",nullable = false)
+    @NotNull(message = "公司不能为空")
     @RelationMeta(name = "StaffCompany")
     private Company company;
 

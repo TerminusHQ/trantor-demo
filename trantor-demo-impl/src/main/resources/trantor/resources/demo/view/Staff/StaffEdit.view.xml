@@ -9,7 +9,7 @@
             <Field name="email" label="邮箱"/>
             <Field name="equipments" label="办公设备">
                 <RenderType>
-                    <ModelSelect dataCondition="status = 'Enable'"/>
+                    <ModelSelect dataCondition="status = 'Enable' and company.id = ?" dataParams="[#staffContainer.data.company.id]"/>
                 </RenderType>
             </Field>
         </Fields>

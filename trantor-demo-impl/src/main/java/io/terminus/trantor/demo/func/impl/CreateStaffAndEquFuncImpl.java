@@ -31,8 +31,8 @@ public class CreateStaffAndEquFuncImpl implements CreateStaffAndEquFunc {
         }
         List<IntResult> intResults = DS.create(staffAndEquipments);
         List<Long> ids = new ArrayList<>();
-        for (StaffAndEquipment staffAndEquipment : staffAndEquipments){
-            ids.add(staffAndEquipment.getId());
+        for (IntResult intResult : intResults){
+            ids.add(intResult.getValue().longValue());
         }
         List<StaffAndEquipment> byIds = DS.findByIds(StaffAndEquipment.class, ids);
 

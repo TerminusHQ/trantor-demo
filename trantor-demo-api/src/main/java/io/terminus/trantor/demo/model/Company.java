@@ -23,7 +23,7 @@ import javax.validation.constraints.NotNull;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Model(
-        name = "公司",
+        name = "公司模型",
         mainField = Company.name_field,
         indexes = {
                 @Index(columns = Company.code_field, unique = true),

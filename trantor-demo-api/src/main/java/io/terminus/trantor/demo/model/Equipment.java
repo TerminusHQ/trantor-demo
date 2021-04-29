@@ -13,6 +13,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -42,6 +43,12 @@ public class Equipment extends BaseModel<Long> {
 
     @Field(name = "状态", defaultValue = "Enable", nullable = false)
     private OrgStatus status;
+
+    @Field(name = "公司")
+    @RelationMeta(name = "EquipmentCompany")
+    @NotNull(message = "公司不能为空")
+    private Company company;
+
 
     @Field(name = "办公设备")
     @LookupMeta(linkField = StaffAndEquipment.equipment_field)

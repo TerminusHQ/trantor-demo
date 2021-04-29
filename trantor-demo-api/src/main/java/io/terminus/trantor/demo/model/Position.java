@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
  */
 @EqualsAndHashCode(callSuper = true)
 @Model(
-        name = "岗位",
+        name = "岗位模型",
         mainField = Position.name_field,
         indexes = {
                 @Index(columns = Position.code_field, unique = true),

@@ -11,6 +11,7 @@
         <Fields>
             <Field name="code" label="设备编码"/>
             <Field name="type" label="设备类型"/>
+            <Field name="company" label="所属公司"/>
             <Field name="status" label="状态"/>
             <Field name="staffs" label="设备使用人"/>
         </Fields>

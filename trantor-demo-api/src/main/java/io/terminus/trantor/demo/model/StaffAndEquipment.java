@@ -3,6 +3,7 @@ package io.terminus.trantor.demo.model;
 import io.terminus.trantor.demo.dict.EquipmentType;
 import io.terminus.trantorframework.api.BaseModel;
 import io.terminus.trantorframework.api.annotation.Field;
+import io.terminus.trantorframework.api.annotation.Index;
 import io.terminus.trantorframework.api.annotation.Model;
 import io.terminus.trantorframework.api.annotation.typemeta.DictionaryMeta;
 import io.terminus.trantorframework.api.annotation.typemeta.LinkMeta;
@@ -17,7 +18,12 @@ import lombok.ToString;
  */
 @Data
 @ToString(callSuper = true)
-@Model(name = "Staff equipment relation")
+@Model(
+        name = "员工和设备关系模型"
+//        indexes = {
+//        @Index(columns = {StaffAndEquipment.staff_field,StaffAndEquipment.type_field}, unique = true),
+//        }
+)
 @AllArgsConstructor
 @NoArgsConstructor
 public class StaffAndEquipment extends BaseModel<Long> {
