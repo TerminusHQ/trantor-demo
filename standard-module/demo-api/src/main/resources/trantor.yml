@@ -6,4 +6,4 @@ module:
   name: trantor demo模块
   packageName: io.terminus.trantor.demo
   version: 1.0.0-SNAPSHOT
-  description: trantor demo 的员工模块
+  description: trantor demo 的模块

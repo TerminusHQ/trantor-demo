@@ -3,26 +3,40 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>trantor-demo</artifactId>
+        <artifactId>standard-module</artifactId>
         <groupId>io.terminus.trantor.demo</groupId>
-        <version>0.16.3.RELEASE</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>trantor-demo-impl</artifactId>
+    <artifactId>demo-impl</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>io.terminus.trantor.demo</groupId>
-            <artifactId>trantor-demo-api</artifactId>
-            <version>${trantor.version}</version>
+            <artifactId>demo-api</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>io.terminus.trantor</groupId>
             <artifactId>trantor-sdk</artifactId>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-runtime</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <!--<scope>test</scope>-->
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -32,7 +46,6 @@
                 <version>${trantor.version}</version>
                 <configuration>
                     <moduleKey>demo</moduleKey>
-                    <!--上报MetaStore地址，terminus为tenant code，gaia为 trantor.yml中定义的project key-->
                     <repositoryUrl>http://localhost:8082/terminus/gaia</repositoryUrl>
                 </configuration>
                 <executions>
@@ -45,6 +58,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
