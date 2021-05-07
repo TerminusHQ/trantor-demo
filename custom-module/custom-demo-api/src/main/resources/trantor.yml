@@ -1,0 +1,16 @@
+product: # 当前定制项目的信息
+  key: custom   #定制产品key，
+  version: 0.0.0-SNAPSHOT # 目前定制项目的版本是固定的, 定制默认都是 0.0.0-SNAPSHOT
+  dependencies: # 当前定制项目范围内的依赖
+    - key: base
+standardProduct: # 定制项目所依赖的制品信息
+  key: gaia # 依赖的制品 Key, 公司内默认都是 scp
+  version: 1.0.0-SNAPSHOT # 依赖的制品版本
+  dependencies: # 当前项目范围内的依赖
+    - key: demo
+module:
+  key: custom_demo
+  name: Trantor Custom Demo
+  packageName: io.terminus.trantor.custom.demo
+  version: 1.0.0-SNAPSHOT
+  description: demo

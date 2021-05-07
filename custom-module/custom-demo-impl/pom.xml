@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>custom-module</artifactId>
+        <groupId>io.terminus.trantor.demo</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>custom-demo-impl</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.terminus.trantor.demo</groupId>
+            <artifactId>custom-demo-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.terminus.trantor.demo</groupId>
+            <artifactId>demo-impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-sdk</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.terminus.trantor</groupId>
+                <artifactId>metadata-maven-plugin</artifactId>
+                <version>${trantor.version}</version>
+                <configuration>
+                    <moduleKey>custom_demo</moduleKey>
+                    <repositoryUrl>http://localhost:8082/terminus/custom</repositoryUrl>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

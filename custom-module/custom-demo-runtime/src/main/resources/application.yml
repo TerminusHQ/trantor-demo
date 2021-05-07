@@ -1,0 +1,8 @@
+server:
+  port: 8072
+
+trantor:
+  mainModule: custom_demo
+  embedModules: # trantor.yml 中定义的模块 key
+    - demo
+  enabledModuleKeys: demo

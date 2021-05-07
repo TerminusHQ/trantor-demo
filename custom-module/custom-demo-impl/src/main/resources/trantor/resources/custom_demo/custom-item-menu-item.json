@@ -1,0 +1,9 @@
+[
+  {
+    "originalKey": "itemList",
+    "name": "扩展商品列表",
+    "routingType": "Route",
+    "desc": "",
+    "routeKey": "item_ItemBO_CustomItemList"
+  }
+]
