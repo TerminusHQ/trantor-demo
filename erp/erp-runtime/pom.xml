@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>erp</artifactId>
+        <groupId>io.terminus.trantor.erp</groupId>
+        <version>0.17.63.RELEASE</version>
+    </parent>
+
+    <artifactId>erp-runtime</artifactId>
+
+    <dependencies>
+        <!-- 依赖 trantor runtime -->
+        <dependency>
+            <groupId>io.terminus.trantor</groupId>
+            <artifactId>trantor-runtime</artifactId>
+        </dependency>
+
+        <!-- 依赖自身 impl module -->
+        <dependency>
+            <groupId>io.terminus.trantor.erp</groupId>
+            <artifactId>erp-impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

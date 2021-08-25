@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<View title="公司编辑" forModel="erp_Company" type="Form" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://trantor-docs-dev.app.terminus.io/static/v0.17.x/schema/base.xsd">
+    <Form model="erp_Company" dataCondition="id = ?" dataParams="[pageContext.record.id]">
+        <Fields>
+            <Field name="name" label="公司名称"/>
+            <Field name="shortName" label="公司简称"/>
+            <Field name="abbreviation" label="公司缩写"/>
+            <Field name="address" label="地址"/>
+            <Field name="remark" label="公司详情"/>
+            <Field name="status" label="状态"/>
+        </Fields>
+        <Actions>
+            <Action type="Submit" show="#{!this.data.id}" logicFunction="erp_CreateCompanyBuiltInFunc" after="GoBack" layout="Footer"/>
+            <Action type="Submit" show="#{!!this.data.id}" logicFunction="erp_UpdateCompanyBuiltInFunc" after="GoBack" layout="Footer"/>
+        </Actions>
+    </Form>
+</View>

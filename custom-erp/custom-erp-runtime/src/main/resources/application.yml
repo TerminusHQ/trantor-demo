@@ -1,0 +1,5 @@
+server:
+  port: 8072
+
+trantor:
+  mainModule: custom_erp

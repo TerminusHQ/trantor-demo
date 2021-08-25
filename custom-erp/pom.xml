@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.terminus.trantor.erp</groupId>
+        <artifactId>trantor-demo</artifactId>
+        <version>0.17.63.RELEASE</version>
+    </parent>
+
+    <groupId>io.terminus.trantor.custom.erp</groupId>
+    <artifactId>custom-erp</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>custom-erp-api</module>
+        <module>custom-erp-impl</module>
+        <module>custom-erp-runtime</module>
+    </modules>
+
+</project>

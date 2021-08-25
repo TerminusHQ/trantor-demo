@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<View type="Form" forModel="erp_Equipment" title="设备创建" version="2"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://terminus-trantor.oss-cn-hangzhou.aliyuncs.com/xsi/0.17.x/base.xsd">
+    <Form model="erp_Equipment">
+        <Fields>
+            <Field name="company" label="所属公司"/>
+            <Field name="staff" label="所属员工"/>
+        </Fields>
+        <Actions>
+            <Action type="Submit" label="提交" logicFunction="erp_EquipmentCreateFunc" after="GoBack"/>
+        </Actions>
+    </Form>
+</View>

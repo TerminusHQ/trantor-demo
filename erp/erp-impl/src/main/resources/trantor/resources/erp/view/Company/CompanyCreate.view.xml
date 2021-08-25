@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<View xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://trantor-docs-dev.app.terminus.io/static/v0.17.x/schema/base.xsd"
+      version="2" type="Form" forModel="erp_Company" title="公司_创建">
+    <Form model="erp_Company">
+        <Fields>
+            <Field name="name" label="公司名称"/>
+            <Field name="shortName" label="公司简称"/>
+            <Field name="abbreviation" label="公司缩写"/>
+            <Field name="address" label="地址"/>
+            <Field name="remark" label="公司详情"/>
+            <Field name="status" label="状态"/>
+        </Fields>
+        <Actions>
+            <Action type="Submit" label="提交" after="GoBack" logicFlow="erp_CompanyCreateFlow"/>
+        </Actions>
+    </Form>
+</View>

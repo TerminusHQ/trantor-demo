@@ -1,0 +1,9 @@
+product:
+  key: trantor_standard
+  version: 1.0.0-SNAPSHOT
+module:
+  key: erp
+  name: Trantor ERP Nodule
+  packageName: io.terminus.trantor.erp
+  version: 1.0.0-SNAPSHOT
+  description: Trantor ERP 制品模块

@@ -1,0 +1,11 @@
+product: # 当前定制项目的信息
+  key: trantor_standard   #定制产品key，
+  version: 1.0.0-SNAPSHOT # 目前定制项目的版本是固定的, 定制默认都是 0.0.0-SNAPSHOT
+  dependencies:
+    - key: erp # 依赖模块的唯一标识符
+module:
+  key: custom_erp
+  name: Trantor Custom ERP Nodule
+  packageName: io.terminus.trantor.custom.erp
+  version: 1.0.0-SNAPSHOT
+  description: Trantor ERP 定制模块

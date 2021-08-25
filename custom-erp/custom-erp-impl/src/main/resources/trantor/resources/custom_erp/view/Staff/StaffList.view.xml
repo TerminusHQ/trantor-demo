@@ -1,0 +1,34 @@
+<View type="List" forModel="erp_Staff" title="员工列表">
+    <Table model="erp_Staff" dataCondition="">
+        <Search>
+            <Fields>
+                <Field name="staffName" label="员工名称"/>
+                <Field name="staffNumber" label="员工编号"/>
+                <Field name="departments" label="部门类型"/>
+                <Field name="company" label="所属公司"/>
+            </Fields>
+        </Search>
+        <Fields>
+            <Field name="staffName" label="员工名称"/>
+            <Field name="staffNumber" label="员工编号"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="departments" label="部门"/>
+            <Field name="positionType" label="岗位类型"/>
+            <Field name="mobile" label="手机号"/>
+            <Field name="email" label="邮箱"/>
+            <Field name="birthday" label="出生日期"/>
+            <Field name="age" label="年龄"/>
+            <Field name="liveAddress" label="住址"/>
+            <Field name="salary" label="薪资"/>
+        </Fields>
+        <RecordActions label="操作">
+            <Action label="详情" targetView="erp_Staff__Detail__builtIn"/>
+            <Action label="编辑" targetView="erp_Staff_StaffEdit"/>
+            <Action type="Delete" label="删除" after="Refresh"
+                    logicFlow="erp_StaffDeleteFlow" confirm="确定删除吗？" />
+        </RecordActions>
+        <Actions>
+            <Action label="新建员工" targetView="erp_Staff_StaffCreate"/>
+        </Actions>
+    </Table>
+</View>
