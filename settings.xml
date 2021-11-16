@@ -7,7 +7,7 @@
         <server>
             <id>terminus</id>
             <username>readonly</username>
-            <password>o&RkL0omjB5HYZTh</password>
+            <password>o&amp;RkL0omjB5HYZTh</password>
         </server>
     </servers>
 
