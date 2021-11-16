@@ -1,0 +1,35 @@
+<View xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://terminus-trantor.oss-cn-hangzhou.aliyuncs.com/xsi/0.17.x/base.xsd"
+      title="" forModel="erp_Position" type="List" menuView="true" version="2">
+    <Table key="table" model="erp_Position" dataCondition="">
+        <Search>
+            <Fields>
+                <Field name="positionName"/>
+                <Field name="department"/>
+                <Field name="createdAt"/>
+                <Field name="updatedAt"/>
+                <Field name="createdBy"/>
+                <Field name="updatedBy"/>
+                <Field name="id"/>
+            </Fields>
+        </Search>
+        <RecordActions>
+            <Action label="详情" targetView="erp_Position__Detail__builtIn"/>
+            <Action label="编辑" targetView="erp_Position__Form__builtIn"/>
+            <Action label="删除" logicFunction="erp_DeletePositionBuiltInFunc" after="Refresh"/>
+        </RecordActions>
+        <Fields>
+            <Field name="positionName"/>
+            <Field name="positionDesc"/>
+            <Field name="department"/>
+            <Field name="createdAt"/>
+            <Field name="updatedAt"/>
+            <Field name="createdBy"/>
+            <Field name="updatedBy"/>
+            <Field name="id"/>
+        </Fields>
+        <Actions>
+            <Action type="Create" targetView="erp_Position__Form__builtIn"/>
+        </Actions>
+    </Table>
+</View>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<View title="部门详情" forModel="erp_Equipment" type="Detail" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://terminus-trantor.oss-cn-hangzhou.aliyuncs.com/xsi/0.17.x/base.xsd">
+    <Detail model="erp_Equipment" dataCondition="id = ?" dataParams="[pageContext.record.id]">
+        <Fields>
+            <Field name="code" label="设备编码"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="staff" label="借用员工"/>
+        </Fields>
+    </Detail>
+</View>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<View type="Form" forModel="erp_Department" title="部门创建" version="2"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://terminus-trantor.oss-cn-hangzhou.aliyuncs.com/xsi/0.17.x/base.xsd">
+    <Form model="erp_Department">
+        <Fields>
+            <Field name="name" label="部门名称"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="leader" label="主管"/>
+            <Field name="remark" label="部门详情"/>
+        </Fields>
+        <Actions>
+            <Action type="Submit" label="提交" logicFunction="erp_DepartmentCreateFunc" after="GoBack"/>
+        </Actions>
+    </Form>
+</View>

@@ -1,0 +1,9 @@
+app:
+  key: trantor
+  version: 1.0.0
+module:
+  key: erp
+  name: Trantor ERP Module
+  packageName: io.terminus.trantor.erp
+  version: 1.0.0-SNAPSHOT
+  description: Trantor ERP 标准产品模块

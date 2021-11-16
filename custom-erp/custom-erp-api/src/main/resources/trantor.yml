@@ -1,0 +1,9 @@
+app:
+  key: trantor_custom
+  version: 1.0.0
+module:
+  key: custom_erp
+  name: Trantor ERP Custom Module
+  packageName: io.terminus.trantor.custom.erp
+  version: 1.0.0-SNAPSHOT
+  description: Trantor ERP 定制模块

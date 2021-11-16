@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<View menuView="true" type="List" forModel="erp_Equipment" title="设备列表" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://terminus-trantor.oss-cn-hangzhou.aliyuncs.com/xsi/0.17.x/base.xsd">
+    <Table model="erp_Equipment" dataCondition="">
+        <Search>
+            <Fields>
+                <Field name="code" label="设备编码"/>
+                <Field name="staff" label="借用员工"/>
+            </Fields>
+        </Search>
+        <Fields>
+            <Field name="code" label="设备编码"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="staff" label="借用员工"/>
+        </Fields>
+        <RecordActions label="操作">
+            <Action label="详情" targetView="erp_Equipment_EquipmentDetails"/>
+            <Action type="Delete" label="删除" logicFunction="erp_DeleteEquipmentBuiltInFunc" after="Refresh"  confirm="确定删除吗？"/>
+        </RecordActions>
+        <Actions>
+            <Action label="新建设备" targetView="erp_Equipment_EquipmentCreate"/>
+        </Actions>
+    </Table>
+</View>

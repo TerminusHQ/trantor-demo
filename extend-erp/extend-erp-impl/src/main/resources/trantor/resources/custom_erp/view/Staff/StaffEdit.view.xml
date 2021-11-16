@@ -1,0 +1,25 @@
+<View title="员工编辑" forModel="erp_Staff" type="Form">
+    <Form model="erp_Staff" dataCondition="id = ?" dataParams="[pageContext.record.id]" key="staffContainer">
+        <Fields>
+            <Field name="staffName" label="员工名称"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="departments" label="部门"/>
+            <Field name="positionType" label="岗位类型"/>
+            <Field name="mobile" label="手机号"/>
+            <Field name="email" label="邮箱"/>
+            <Field name="birthday" label="出生日期"/>
+            <Field name="age" label="年龄"/>
+            <Field name="liveAddress" label="住址"/>
+            <Field name="salary" label="薪资"/>
+            <Field name="equipment" label="办公设备" :show="this.data.company != null">
+                <RenderType>
+                    <ModelSelect dataCondition="status = 'free' and company.id = ?" dataParams="[#staffContainer.data.company.id]"/>
+                </RenderType>
+            </Field>
+        </Fields>
+        <Actions>
+        <Action type="Submit" :show="!this.data.id" logicFlow="demo_CreateStaffFlow" after="GoBack" layout="Footer"/>
+        <Action type="Submit" :show="!!this.data.id" logicFlow="demo_UpdateStaffFlow" after="GoBack" layout="Footer"/>
+    </Actions>
+    </Form>
+</View>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<View type="Form" forModel="erp_Staff" title="员工创建" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://terminus-trantor.oss-cn-hangzhou.aliyuncs.com/xsi/0.17.x/base.xsd">
+    <Form model="erp_Staff" key="staffContainer" onFieldValueChange="#{onFieldChange}">
+        <Fields>
+            <Field name="staffName" label="员工名称"/>
+            <Field name="positionType" label="岗位类型"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="departments" label="部门">
+                <RenderType>
+                    <ModelSelect dataCondition="company.id = ?" dataParams="[#staffContainer.data.company.id]"/>
+                </RenderType>
+            </Field>
+            <Field name="mobile" label="手机号"/>
+            <Field name="email" label="邮箱"/>
+            <Field name="equipment" label="办公设备"/>
+            <Field name="birthday" label="出生日期"/>
+            <Field name="liveAddress" label="住址"/>
+            <Field name="salary" label="薪资"/>
+        </Fields>
+        <Actions>
+            <Action type="Submit" label="提交" after="GoBack" logicFlow="erp_StaffCreateFlow"/>
+        </Actions>
+    </Form>
+</View>

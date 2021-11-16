@@ -1,0 +1,9 @@
+app:
+  key: trantor_app
+  version: 1.0.0
+module:
+  key: extend_erp
+  name: Trantor ERP Extend Module
+  packageName: io.terminus.trantor.extend.erp
+  version: 1.0.0-SNAPSHOT
+  description: Trantor ERP 扩展模块

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<View title="部门详情" forModel="erp_Department" type="Detail" version="2"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://terminus-trantor.oss-cn-hangzhou.aliyuncs.com/xsi/0.17.x/base.xsd">
+    <Detail model="erp_Department" dataCondition="id = ?" dataParams="[pageContext.record.id]">
+        <Fields>
+            <Field name="name" label="部门名称"/>
+            <Field name="code" label="部门编码"/>
+            <Field name="company" label="所属公司"/>
+            <Field name="leader" label="主管"/>
+            <Field name="remark" label="部门详情"/>
+        </Fields>
+    </Detail>
+</View>
